@@ -6,7 +6,6 @@ public class Enemy : Movement {
     public Doggo doggo;
     override protected void Start () {
         base.Start();
-        // DoggoRef = GameObject.Find("Doggo");
     }
 
 	// Update is called once per frame
@@ -22,7 +21,6 @@ public class Enemy : Movement {
     }
 
     void FightDoggo() {
-        // Doggo doggo = (Doggo)DoggoRef.GetComponent(typeof(Doggo));
         doggo.Fight(this);
     }
 }

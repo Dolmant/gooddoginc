@@ -10,12 +10,17 @@ public class Doggo : Movement {
     }
 	
 	// Update is called once per frame
-	override protected void Update ()
+	override protected void FixedUpdate ()
 	{
         if (!ani.GetBool("fight")) {
-            base.Update();
+            base.FixedUpdate();
         }
-	    HandleInput();
+    }
+
+    override protected void Update ()
+	{
+        base.Update();
+        HandleInput();
     }
 
     void HandleInput()
@@ -29,9 +34,12 @@ public class Doggo : Movement {
     public void Fight(Enemy enemy) {
         Destroy(enemy.gameObject);
         ani.SetBool("fight", true);
+        ani.Play("DoggoFight");
+        StartCoroutine(FightAni());
     }
-    public void UnFight() {
-        Debug.Log("hit");
+
+    public IEnumerator FightAni() {
+        yield return new WaitForSeconds(1);
         ani.SetBool("fight", false);
     }
 }
