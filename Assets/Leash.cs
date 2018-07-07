@@ -52,7 +52,6 @@ public class Leash : MonoBehaviour
 				slaveMovement.gravity = (pullRange - d) * pullForce * pullingTime *
 				                        (slaveLeashPoint.position - masterLeashPoint.position).normalized;
 				
-				Debug.Log(pullingTime);
 			}
 			else
 			{

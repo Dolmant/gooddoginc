@@ -11,7 +11,7 @@ public class Doggo : Movement
 	
 //	override protected void FixedUpdate () {
 //	    // Prevent new targets from being set
-//        if (!ani.GetBool("fight") && !ani.GetBool("interact") && !ani.GetBool("bark")) {
+//        if () {
 //            base.FixedUpdate();
 //        }
 //    }
@@ -22,7 +22,7 @@ public class Doggo : Movement
     }
 
     void HandleInput() {
-        if (Input.GetMouseButton(0)) {
+        if (!ani.GetBool("fight") && !ani.GetBool("interact") && !ani.GetBool("bark") && Input.GetMouseButton(0)) {
             goingForTarget = true;
             var selfClick = false;
             RaycastHit2D hit = Physics2D.Raycast(
@@ -47,6 +47,7 @@ public class Doggo : Movement
     public void Fight(Enemy enemy) {
         Debug.Log("Reaaaaddyyyyy... FIGHT");
         interrupted = true;
+        goingForTarget = false;
         rb.velocity = Vector3.zero;
         target = transform.position;
         Destroy(enemy.gameObject);
@@ -55,6 +56,7 @@ public class Doggo : Movement
     }
 
     public IEnumerator FightAni() {
+        goingForTarget = true;
         yield return new WaitForSeconds(2);
         ani.SetBool("fight", false);
         interrupted = false;
@@ -63,6 +65,7 @@ public class Doggo : Movement
     public void InteractWithDoggo(PlaceOfInterest POI) {
         interrupted = false;
         INTERACT = true;
+        goingForTarget = false;
         rb.velocity = Vector3.zero;
         Debug.Log("Interact");
         ani.SetBool("interact", true);
@@ -76,6 +79,7 @@ public class Doggo : Movement
             POI.Progress();
             ani.SetBool("interact", false);
         }
+        goingForTarget = true;
         interrupted = false;
     }
 
@@ -88,6 +92,7 @@ public class Doggo : Movement
         ani.SetBool("bark", true);
         rb.velocity = Vector3.zero;
         BARK = true;
+        goingForTarget = false;
         Debug.Log("Bark");
         StartCoroutine(DoggoBarkAni());
     }
@@ -95,6 +100,7 @@ public class Doggo : Movement
     public IEnumerator DoggoBarkAni() {
         yield return new WaitForSeconds(2);
         ani.SetBool("bark", false);
+        goingForTarget = true;
         BARK = false;
     }
 }

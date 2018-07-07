@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy : Movement {
     public Doggo doggo;
-    private State confidence;
+    private State confidence = State.confident;
 
     private Boolean confidenceShaken;
     public enum State
@@ -20,17 +20,18 @@ public class Enemy : Movement {
 	{
         var doggoPos = (doggo.transform.position - transform.position).magnitude;
         if (doggoPos < 10 && !confidenceShaken) {
+            goingForTarget = true;
             target = doggo.transform.position;
         }
         if (doggoPos < 3 && doggo.BARK) {
             if (confidence == State.confident) {
                 confidenceShaken = true;
                 confidence = State.nervous;
-                target = transform.position;
+                goingForTarget = false;
             } else if (confidence == State.nervous) {
                 confidenceShaken = true;
                 confidence = State.scared;
-                target = transform.position;
+                goingForTarget = false;
             } else {
                 Debug.Log("MEOW *dies*");
                 Destroy(gameObject);
@@ -46,6 +47,7 @@ public class Enemy : Movement {
     public IEnumerator RestoreConfidence() {
         yield return new WaitForSeconds(2);
         confidenceShaken = false;
+        goingForTarget = true;
     }
 
     void FightDoggo() {
