@@ -3,10 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Doggo : Movement {
-    // Use this for initialization
-    override protected void Start () {
-        base.Start();
+public class Doggo : Movement
+{
+    public GameObject LeashPrefab;
+    private Transform leash;
+    private Human myHuman;
+
+    private void Start()
+    {
+        leash = Instantiate(LeashPrefab).transform;
     }
 	
 	// Update is called once per frame

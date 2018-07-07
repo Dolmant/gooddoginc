@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Human : Movement {
+public class Human : Movement
+{
+    private Rigidbody2D rb;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        rb.velocity = new Vector2(0f, -1f);
+    }
+    
+    protected override void FixedUpdate()
+    {
+        
+    }
 }
