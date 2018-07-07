@@ -1,11 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Doggo : MonoBehaviour {
-    public Vector2 target;
+    public Vector3 target;
     public float speed;
     public Animator ani;
+
+    enum Direction
+    {
+        forward,
+        back,
+        left,
+        right
+    }
+
+    private Direction direction;
+    private Vector3 directionVec;
 
     // Use this for initialization
     void Start () {
@@ -13,32 +25,63 @@ public class Doggo : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
-        var left = 2;
-        var right = 3;
-        var forward = 0;
-        var back = 1;
-        var direction = (target - (Vector2)transform.position);
-        Debug.Log(direction);
-        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
-            if (direction.x > 0)
+	void Update ()
+	{
+	    CheckDirection();
+	    HandleAnimation();
+	    HandleInput();
+	    MoveDoggo();
+    }
+
+    void CheckDirection()
+    {
+        directionVec = target - transform.position;
+	    
+        if (Mathf.Abs(directionVec.x) > Mathf.Abs(directionVec.y)) {
+            if (directionVec.x > 0)
             {
-                ani.SetInteger("state", right);
+                direction = Direction.right;
             } else
             {
-                ani.SetInteger("state", left);
+                direction = Direction.left;
             }
         } else
         {
-            if (direction.y > 0)
+            if (directionVec.y > 0)
             {
-                ani.SetInteger("state", back);
+                direction = Direction.back;
             }
             else
             {
-                ani.SetInteger("state", forward);
+                direction = Direction.forward;
             }
         }
-        transform.position = direction.normalized * speed + (Vector2)transform.position;
+    }
+
+    void HandleInput()
+    {
+        if (Input.GetMouseButton(0)) {
+            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            target.z = 0f;
+        }
+    }
+
+    void MoveDoggo()
+    {
+        transform.position = directionVec.normalized * speed + transform.position;
+        
+        if (Vector3.Distance(transform.position, target) > speed)
+        {
+            transform.position = (target - transform.position).normalized * speed + transform.position;
+        }
+        else
+        {
+            transform.position = target;
+        }
+    }
+
+    void HandleAnimation()
+    {
+        ani.SetInteger("state", (int)direction);
     }
 }
