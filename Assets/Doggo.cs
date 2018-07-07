@@ -38,7 +38,6 @@ public class Doggo : Movement
     public void Fight(Enemy enemy) {
         Destroy(enemy.gameObject);
         ani.SetBool("fight", true);
-        ani.Play("DoggoFight");
         StartCoroutine(FightAni());
     }
 
