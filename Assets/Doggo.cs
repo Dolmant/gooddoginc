@@ -7,6 +7,7 @@ public class Doggo : Movement
 {
     private Boolean interrupted;
     public Boolean BARK;
+    public Boolean INTERACT;
 	
 	override protected void FixedUpdate () {
 	    // Prevent new targets from being set
@@ -44,6 +45,7 @@ public class Doggo : Movement
 
     public void Fight(Enemy enemy) {
         Debug.Log("Reaaaaddyyyyy... FIGHT");
+        interrupted = true;
         rb.velocity = Vector3.zero;
         target = transform.position;
         Destroy(enemy.gameObject);
@@ -52,34 +54,45 @@ public class Doggo : Movement
     }
 
     public IEnumerator FightAni() {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         ani.SetBool("fight", false);
+        interrupted = false;
     }
     
     public void InteractWithDoggo(PlaceOfInterest POI) {
+        interrupted = false;
+        INTERACT = true;
+        rb.velocity = Vector3.zero;
         Debug.Log("Interact");
         ani.SetBool("interact", true);
         StartCoroutine(InteractWithDoggoAni(POI));
+        StartCoroutine(InteractionTimer());
     }
 
     public IEnumerator InteractWithDoggoAni(PlaceOfInterest POI) {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         if (!interrupted) {
             POI.Progress();
             ani.SetBool("interact", false);
         }
         interrupted = false;
     }
+
+    public IEnumerator InteractionTimer() {
+        yield return new WaitForSeconds(4);
+        INTERACT = false;
+    }
     
     public void DoggoBark() {
         ani.SetBool("bark", true);
+        rb.velocity = Vector3.zero;
         BARK = true;
         Debug.Log("Bark");
         StartCoroutine(DoggoBarkAni());
     }
 
     public IEnumerator DoggoBarkAni() {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         ani.SetBool("bark", false);
         BARK = false;
     }

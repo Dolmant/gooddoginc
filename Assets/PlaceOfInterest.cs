@@ -19,7 +19,7 @@ public class PlaceOfInterest : MonoBehaviour {
 	
 	void FixedUpdate ()
 	{
-        if (progress != State.full && (doggo.transform.position - transform.position).magnitude < 0.5) {
+        if (progress != State.full && !doggo.INTERACT && (doggo.transform.position - transform.position).magnitude < 0.5) {
             doggo.InteractWithDoggo(this);
         }
     }

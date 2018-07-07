@@ -1,0 +1,2563 @@
+fileFormatVersion: 2
+guid: d76c10669a26fbd46b2b54350c44d914
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DoggoComboSpriteSheetExtra_0
+    21300002: DoggoComboSpriteSheetExtra_1
+    21300004: DoggoComboSpriteSheetExtra_2
+    21300006: DoggoComboSpriteSheetExtra_3
+    21300008: DoggoComboSpriteSheetExtra_4
+    21300010: DoggoComboSpriteSheetExtra_5
+    21300012: DoggoComboSpriteSheetExtra_6
+    21300014: DoggoComboSpriteSheetExtra_7
+    21300016: DoggoComboSpriteSheetExtra_8
+    21300018: DoggoComboSpriteSheetExtra_9
+    21300020: DoggoComboSpriteSheetExtra_10
+    21300022: DoggoComboSpriteSheetExtra_11
+    21300024: DoggoComboSpriteSheetExtra_12
+    21300026: DoggoComboSpriteSheetExtra_13
+    21300028: DoggoComboSpriteSheetExtra_14
+    21300030: DoggoComboSpriteSheetExtra_15
+    21300032: DoggoComboSpriteSheetExtra_16
+    21300034: DoggoComboSpriteSheetExtra_17
+    21300036: DoggoComboSpriteSheetExtra_18
+    21300038: DoggoComboSpriteSheetExtra_19
+    21300040: DoggoComboSpriteSheetExtra_20
+    21300042: DoggoComboSpriteSheetExtra_21
+    21300044: DoggoComboSpriteSheetExtra_22
+    21300046: DoggoComboSpriteSheetExtra_23
+    21300048: DoggoComboSpriteSheetExtra_24
+    21300050: DoggoComboSpriteSheetExtra_25
+    21300052: DoggoComboSpriteSheetExtra_26
+    21300054: DoggoComboSpriteSheetExtra_27
+    21300056: DoggoComboSpriteSheetExtra_28
+    21300058: DoggoComboSpriteSheetExtra_29
+    21300060: DoggoComboSpriteSheetExtra_30
+    21300062: DoggoComboSpriteSheetExtra_31
+    21300064: DoggoComboSpriteSheetExtra_32
+    21300066: DoggoComboSpriteSheetExtra_33
+    21300068: DoggoComboSpriteSheetExtra_34
+    21300070: DoggoComboSpriteSheetExtra_35
+    21300072: DoggoComboSpriteSheetExtra_36
+    21300074: DoggoComboSpriteSheetExtra_37
+    21300076: DoggoComboSpriteSheetExtra_38
+    21300078: DoggoComboSpriteSheetExtra_39
+    21300080: DoggoComboSpriteSheetExtra_40
+    21300082: DoggoComboSpriteSheetExtra_41
+    21300084: DoggoComboSpriteSheetExtra_42
+    21300086: DoggoComboSpriteSheetExtra_43
+    21300088: DoggoComboSpriteSheetExtra_44
+    21300090: DoggoComboSpriteSheetExtra_45
+    21300092: DoggoComboSpriteSheetExtra_46
+    21300094: DoggoComboSpriteSheetExtra_47
+    21300096: DoggoComboSpriteSheetExtra_48
+    21300098: DoggoComboSpriteSheetExtra_49
+    21300100: DoggoComboSpriteSheetExtra_50
+    21300102: DoggoComboSpriteSheetExtra_51
+    21300104: DoggoComboSpriteSheetExtra_52
+    21300106: DoggoComboSpriteSheetExtra_53
+    21300108: DoggoComboSpriteSheetExtra_54
+    21300110: DoggoComboSpriteSheetExtra_55
+    21300112: DoggoComboSpriteSheetExtra_56
+    21300114: DoggoComboSpriteSheetExtra_57
+    21300116: DoggoComboSpriteSheetExtra_58
+    21300118: DoggoComboSpriteSheetExtra_59
+    21300120: DoggoComboSpriteSheetExtra_60
+    21300122: DoggoComboSpriteSheetExtra_61
+    21300124: DoggoComboSpriteSheetExtra_62
+    21300126: DoggoComboSpriteSheetExtra_63
+    21300128: DoggoComboSpriteSheetExtra_64
+    21300130: DoggoComboSpriteSheetExtra_66
+    21300132: DoggoComboSpriteSheetExtra_67
+    21300134: DoggoComboSpriteSheetExtra_68
+    21300136: DoggoComboSpriteSheetExtra_69
+    21300138: DoggoComboSpriteSheetExtra_70
+    21300140: DoggoComboSpriteSheetExtra_71
+    21300142: DoggoComboSpriteSheetExtra_72
+    21300144: DoggoComboSpriteSheetExtra_74
+    21300146: DoggoComboSpriteSheetExtra_75
+    21300148: DoggoComboSpriteSheetExtra_76
+    21300150: DoggoComboSpriteSheetExtra_77
+    21300152: DoggoComboSpriteSheetExtra_78
+    21300154: DoggoComboSpriteSheetExtra_79
+    21300156: DoggoComboSpriteSheetExtra_80
+    21300158: DoggoComboSpriteSheetExtra_82
+    21300160: DoggoComboSpriteSheetExtra_83
+    21300162: DoggoComboSpriteSheetExtra_84
+    21300164: DoggoComboSpriteSheetExtra_85
+    21300166: DoggoComboSpriteSheetExtra_86
+    21300168: DoggoComboSpriteSheetExtra_87
+    21300170: DoggoComboSpriteSheetExtra_88
+    21300172: DoggoComboSpriteSheetExtra_89
+    21300174: DoggoComboSpriteSheetExtra_91
+    21300176: DoggoComboSpriteSheetExtra_92
+    21300178: DoggoComboSpriteSheetExtra_93
+    21300180: DoggoComboSpriteSheetExtra_94
+    21300182: DoggoComboSpriteSheetExtra_95
+    21300184: DoggoComboSpriteSheetExtra_96
+    21300186: DoggoComboSpriteSheetExtra_97
+    21300188: DoggoComboSpriteSheetExtra_98
+    21300190: DoggoComboSpriteSheetExtra_99
+    21300192: DoggoComboSpriteSheetExtra_100
+    21300194: DoggoComboSpriteSheetExtra_101
+    21300196: DoggoComboSpriteSheetExtra_102
+    21300198: DoggoComboSpriteSheetExtra_103
+    21300200: DoggoComboSpriteSheetExtra_104
+    21300202: DoggoComboSpriteSheetExtra_105
+    21300204: DoggoComboSpriteSheetExtra_106
+    21300206: DoggoComboSpriteSheetExtra_107
+    21300208: DoggoComboSpriteSheetExtra_108
+    21300210: DoggoComboSpriteSheetExtra_109
+    21300212: DoggoComboSpriteSheetExtra_110
+    21300214: DoggoComboSpriteSheetExtra_111
+    21300216: DoggoComboSpriteSheetExtra_112
+    21300218: DoggoComboSpriteSheetExtra_113
+    21300220: DoggoComboSpriteSheetExtra_114
+    21300222: DoggoComboSpriteSheetExtra_115
+    21300224: DoggoComboSpriteSheetExtra_116
+    21300226: DoggoComboSpriteSheetExtra_117
+    21300228: DoggoComboSpriteSheetExtra_118
+    21300230: DoggoComboSpriteSheetExtra_119
+    21300232: DoggoComboSpriteSheetExtra_120
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 504
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee63c3b9f334b6469f029f49a517aa2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 504
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124b0990476131d45940ffc08217297f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 504
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c22a731e0c72e042bd9ab45fda01b23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 502
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd23c69297803f74ca01f76ce63a8bc8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_4
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 502
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54321f2485e435a4aa056072d1c3d60b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_5
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 502
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dddeaf69f3c0ec46a1c41deb83ced9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_6
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 502
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189cfe1c74b8a6445a00e3a03de4e0c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_7
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 502
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26ea3d7788397440a9fa1a8f1ce3167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_8
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 504
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9289994f562725442ae367a8ba152a8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_9
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 504
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0533e00231df8b344b18b1c805ca094b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_10
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 504
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b588654795e17f84a98dd1a55e1e8516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_11
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 502
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fcaec32590ee144804853160b00067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_12
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 502
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2a0419353e3bf48ba84fe508dd5622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_13
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 502
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa62ad941f05f24287f7f48846662a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_14
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 507
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b641af69f93d6e4c8a919b306f369cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_15
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 494
+        width: 4
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab3d39b59fe9984186392c4ae420a53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7906ed338db8b4fba6ce2beac87ad8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_17
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 432
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a63c74da6e35f043b8c0dfbf7ecec8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_18
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 432
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ea2d5cde4c2664a9eab0e8ff133fab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_19
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 431
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702039ef86246434f99d810926e7d61e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_20
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 431
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4a8aa0f5d0b0247aabc2e714a3a1a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_21
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 431
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad649dd68f26ce64182323b45f67a692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_22
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 429
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e775c952ed18541bae06592be4cde6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_23
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 429
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfe6ca5c0e6b1d43b4582b01e96506d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_24
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 432
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8fd2cd0059b5149b30226eab3cc3d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_25
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 432
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a5061d188243c4caaa3ad5c73c3d37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_26
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 432
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837059e7dc3bc1d4eb575851ed71b1de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_27
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 431
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c6b86717a16174986c13424627752f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_28
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 431
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0039d23351c1bb488038a74c8a28d3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_29
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 431
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261bc98804c98044aa055e03403c3611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_30
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 418
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a689d84864a290b4bbe85bc619879a72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_31
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 442
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72284c48fe199bb48b1f71ac9b0a86ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 360
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeaef8a65b6a894428fb9d616a05d90b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_33
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 360
+        width: 32
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733f6a456557bcd4d92f6c4204e3b18e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_34
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 360
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0289b7e68c29c444aadb9d061696f83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_35
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 360
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d69165bd855b040a54d648a0c70b9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_36
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 360
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013edfb94b70d8e438be0660804752e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_37
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 360
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf5dc4fd62410e459e0fb71d47fdeab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_38
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 359
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9d41f18474152343ba058ef70cc7f27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_39
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 357
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824f5f9721a30c7438530242feeb8a6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_40
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 360
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515e67578ebd1384985f5044dcf53afb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_41
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 360
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b420b29830c5e464aaa288fba68bffd4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_42
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 360
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5c0c21a250e374dbe81c0c19fedc15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_43
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 360
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6985ba0d8b3985344adae00e49eb4c97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_44
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 360
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a9c74c211eb1f6489baf8096e6413fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_45
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 360
+        width: 32
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6312474cd6400c341b1fb043b7437320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_46
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 350
+        width: 78
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae5847f61557cc49bc7da2d0b7e194d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_47
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 363
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fac768c42a31924aad28c27fe2e81e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_48
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 288
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca4d55016190fe4eb596a898ee74eb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_49
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 288
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf87b567009ec94dbe68c21b00346ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_50
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 288
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca336b7451df5fd44aee14a776f35c7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_51
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 286
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affce13b138c1364ca4ee8e26d96512e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_52
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 286
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55565921469ffa49bb347496f13c35a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_53
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 286
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63915d0d2d67ed4e8bed1248c87d997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_54
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 286
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca6937dfebc30244a43e0462f1239ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_55
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 285
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f4eaf641819b44b86df8523ba53091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_56
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 288
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a191bb344f1e20447b86b566f6bf4164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_57
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 288
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d389110d43ff5484ea8ee3a5bc2aa1d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_58
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 288
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326a3c210b5063244a67c61093eccb16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_59
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 286
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ab115fd16e92c4daf92905a568da75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_60
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 286
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b12972d4aaac674eba9c933e2b5586b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_61
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 286
+        width: 30
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5ced95a4f6e624bb5179ab777cbf51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_62
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 294
+        width: 29
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63f7c20026f339499300348e73efa0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_63
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 296
+        width: 30
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2e5d6278262a54597789e97b4e6d6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_64
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 214
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb2766b1ea96304b99d6515855b4578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_66
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 209
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 543292c2066e8f0438b8b3566979a81f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_67
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 216
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7678ab77120ff47a3937ea591d0320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_68
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 216
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3983856d64907b408827bd5b2cff857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_69
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 216
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5156e55b6a8c2ce48b5ee4695ee7ec9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_70
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 216
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346a64c5361e1c54ba40a496504b22db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_71
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 216
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3a9f4bd0fef2c4388849548f5ad8cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_72
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 216
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92fcfece584226479ce29fee9657a77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_74
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 216
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435bde3911fbfe94bb333003cc1fc72b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_75
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 216
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df0a2a6dec3e85499c83fb5464942c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_76
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 216
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fc2823a11af4f409dd5b28830e2595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_77
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 216
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4504aa6ad3f04ef4f86cb173c8f812de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_78
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 216
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846f961aeb5326440b0a4041920340eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_79
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 216
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3f3188238626944af4cce6b8f9ac32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_80
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 211
+        width: 34
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10067e81d119fa24bb9678165c3d44fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_82
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 146
+        width: 60
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76057b5b1ae50044a8e9cdf872c5fb3e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_83
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 144
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3a1cf697e238d439dc1d79b553e083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_84
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 144
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86b8d22f72a6d644a3e7b561cdf781c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_85
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 144
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09a1dcc9d7df7e4abdc557ed5398170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_86
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 144
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d780af011025e4986747d95fa945a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_87
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 144
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de83e5a2a93f00048b3ad0b59c278648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_88
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 144
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06673dae42626d54cbf62fab7f240816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_89
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 136
+        width: 63
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7956835d1d2acfb4c9cb853cca006a8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_91
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 144
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf698d10395bfe4888b5593623f1d06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_92
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 144
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532d008ad69efac43bd4c20cbca84292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_93
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 144
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba177795733ad14c857ea7f0bff43b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_94
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 144
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd832ecf1c4b9e346881fe76765d7a53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_95
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 144
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6f0737fbce60f4fa76c38ed2aee350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_96
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 144
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbbd5070f0f9024b936b502dada2b18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_97
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f335fa00b83e7664986beddaca7c2817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_98
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d626d24d9a2597945a66acff2d7d5200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_99
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980702c7f9a8c0e4ba1e6ea144030266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_100
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33100c820b7ec2e4c9a5f7c29c1fc606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_101
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b38ac2923daa8468a2deacf28b436b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_102
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfc1092563c2514bbbf10ef94f3b080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_103
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de8bdce08e371b4c89ea9d836ed538b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_104
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4f4330aef906a47a794d95f68b478e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_105
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f14d41d6e21a2d4bb25e4190eecaf55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_106
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6be61692db99340ad0f272db78453d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_107
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2e7931051172245a28c9dcda7faae9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_108
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 72
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e9a31b0628aa54d8be5e32821abaec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_109
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0c7db2771be9d40ba69e1f0b33dd2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_110
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62753e48375c08842a2e870dde5ea7e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_111
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd510ac3190554a4fa5b3e4408ce194b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_112
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4af8bdc65f5f8f44922817aeb67032c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_113
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43fb273b22c705441afbd2d558dbf131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_114
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f26014bd0e72bf4a9686dfb0d920e0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_115
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7676916efba60cf4684d37149050c22c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_116
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 0
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4ea7e2c74e68743a3d19f5050891e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_117
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f1d2d0632a6314d8affbc3565d6777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_118
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56c94e7004fd25448a417c1c86826b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_119
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 0
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8eb3cc43c2a7c842a60901e1a56060e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoComboSpriteSheetExtra_120
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c536f8a377a710a4fb33f324c11c3d52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 88e8d6327e4997f4ea6267c8d72a595e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
