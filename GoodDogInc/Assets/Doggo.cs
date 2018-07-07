@@ -19,8 +19,8 @@ public class Doggo : MonoBehaviour {
         var forward = 0;
         var back = 1;
         var direction = (target - (Vector2)transform.position);
-
-        if (direction.x > direction.y) {
+        Debug.Log(direction);
+        if (Mathf.Abs(direction.x) > Mathf.Abs(direction.y)) {
             if (direction.x > 0)
             {
                 ani.SetInteger("state", right);
