@@ -6,7 +6,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour {
     public Vector3 target;
     public float speed;
-    protected Animator ani;
+    public Animator ani;
 
     protected enum Direction
     {
@@ -22,7 +22,10 @@ public class Movement : MonoBehaviour {
 
     // Use this for initialization
     virtual protected void Start () {
-        ani = GetComponent<Animator>();
+        if (!ani)
+        {
+            ani = GetComponent<Animator>();
+        }
         target = transform.position;
     }
 

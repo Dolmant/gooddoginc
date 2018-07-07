@@ -5,13 +5,12 @@ using UnityEngine;
 
 public class Doggo : Movement
 {
-    public GameObject LeashPrefab;
     private Transform leash;
     private Human myHuman;
 
     private void Start()
     {
-        leash = Instantiate(LeashPrefab).transform;
+        leash = transform.Find("Leash");
     }
 	
 	// Update is called once per frame
