@@ -364,6 +364,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &610275228 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114158479354123006, guid: 36794895b2942b54fb4e7465aef1abaf,
+    type: 2}
+  m_PrefabInternal: {fileID: 950707161}
+  m_Script: {fileID: 11500000, guid: eb7819e81a5343e4483c02d3a0f5668d, type: 3}
 --- !u!1001 &950707161
 Prefab:
   m_ObjectHideFlags: 0
@@ -423,7 +429,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4361364262536398, guid: 2beefc5d8d3bb354ca5764e9622eebbe, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -4.6875
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4361364262536398, guid: 2beefc5d8d3bb354ca5764e9622eebbe, type: 2}
       propertyPath: m_LocalRotation.x
@@ -445,10 +451,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1300284045498484, guid: 2beefc5d8d3bb354ca5764e9622eebbe, type: 2}
-      propertyPath: m_Name
-      value: Cat
-      objectReference: {fileID: 0}
+    - target: {fileID: 114550712258137976, guid: 2beefc5d8d3bb354ca5764e9622eebbe,
+        type: 2}
+      propertyPath: doggo
+      value: 
+      objectReference: {fileID: 610275228}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2beefc5d8d3bb354ca5764e9622eebbe, type: 2}
   m_IsPrefabParent: 0

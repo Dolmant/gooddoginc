@@ -12,7 +12,9 @@ public class Doggo : Movement {
 	// Update is called once per frame
 	override protected void Update ()
 	{
-        base.Update();
+        if (!ani.GetBool("fight")) {
+            base.Update();
+        }
 	    HandleInput();
     }
 
@@ -25,7 +27,11 @@ public class Doggo : Movement {
     }
 
     public void Fight(Enemy enemy) {
-        Destroy(enemy);
+        Destroy(enemy.gameObject);
         ani.SetBool("fight", true);
+    }
+    public void UnFight() {
+        Debug.Log("hit");
+        ani.SetBool("fight", false);
     }
 }
