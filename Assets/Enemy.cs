@@ -11,10 +11,16 @@ public class Enemy : Movement {
 	// Update is called once per frame
 	override protected void FixedUpdate ()
 	{
-        if ((doggo.transform.position - transform.position).magnitude < 10) {
+        var doggoPos = (doggo.transform.position - transform.position).magnitude;
+        if (doggoPos < 10) {
             target = doggo.transform.position;
         }
-        if ((doggo.transform.position - transform.position).magnitude < 0.5) {
+        if (doggoPos < 3 && doggo.BARK) {
+            Debug.Log("MEOW *dies*");
+            Destroy(gameObject);
+            return;
+        }
+        if (doggoPos < 0.5) {
             FightDoggo();
         }
         base.FixedUpdate();

@@ -8,6 +8,7 @@ public class Doggo : Movement
     private Transform leash;
     private Human myHuman;
     private Boolean interrupted;
+    public Boolean BARK;
     private void Start()
     {
         leash = transform.Find("Leash");
@@ -33,8 +34,10 @@ public class Doggo : Movement
             var selfClick = false;
             RaycastHit2D hit = Physics2D.Raycast(new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0);
             if (hit) {
+                Debug.Log("hit");
                 if (hit.collider.CompareTag("Player")) {
                     selfClick = true;
+                    DoggoBark();
                 }
             }
             if (!selfClick) {
@@ -71,6 +74,7 @@ public class Doggo : Movement
     }
     public void DoggoBark() {
         ani.SetBool("bark", true);
+        BARK = true;
         Debug.Log("Bark");
         StartCoroutine(DoggoBarkAni());
     }
@@ -78,5 +82,6 @@ public class Doggo : Movement
     public IEnumerator DoggoBarkAni() {
         yield return new WaitForSeconds(1);
         ani.SetBool("bark", false);
+        BARK = false;
     }
 }
