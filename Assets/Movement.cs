@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour {
     public Vector3 target;
+    public bool goingForTarget;
     public float speed;
     public Animator ani;
     public Rigidbody2D rb;
 
+    public Vector3 gravity = Vector3.zero;
+    
     protected enum Direction
     {
         forward,
@@ -73,18 +76,25 @@ public class Movement : MonoBehaviour {
 
     void Move()
     {
-        rb.velocity = (target - transform.position).normalized * speed;
-        
-        if (Vector3.Distance(transform.position, target) < speed * Time.deltaTime)
+        Vector3 movementComponent = Vector3.zero;
+        if (goingForTarget)
         {
-            rb.velocity = Vector3.zero;
-            rb.MovePosition(target);
+            movementComponent = (target - transform.position).normalized * speed;
+            if (Vector3.Distance(transform.position, target) < speed * Time.deltaTime)
+            {
+                movementComponent = Vector3.zero;
+                goingForTarget = false;
+            }
         }
+
+        rb.velocity = movementComponent + gravity;
     }
+    
     void HandleAnimation()
     {
         if (directionPrev != direction) {
             ani.SetInteger("state", (int)direction);
         }
     }
+    
 }

@@ -8,11 +8,14 @@ public class Leash : MonoBehaviour
 	public GameObject master;
 	public GameObject slave;
 
-	public float leashPullRange;
-	public float leashBreakRange;
+	public float pullRange;
+	public float breakRange;
+	public float pullForce;
+	public float pullForceIncrease;
+	private float pullingTime = 0;
 
-	private Rigidbody2D masterRb;
-	private Rigidbody2D slaveRb;
+	private Movement masterMovement;
+	private Movement slaveMovement;
 	private Transform masterLeashPoint;
 	private Transform slaveLeashPoint;
 	
@@ -23,11 +26,11 @@ public class Leash : MonoBehaviour
 		masterLeashPoint = master.transform.Find("Leash point");
 		slaveLeashPoint = slave.transform.Find("Leash point");
 
-		masterRb = master.GetComponent<Rigidbody2D>();
-		slaveRb = slave.GetComponent<Rigidbody2D>();
+		masterMovement = master.GetComponent<Movement>();
+		slaveMovement = slave.GetComponent<Movement>();
 	}
 	
-	void Update () {
+	void FixedUpdate () {
 		if (master && slave)
 		{
 			line.SetPosition(0, masterLeashPoint.position);
@@ -35,16 +38,25 @@ public class Leash : MonoBehaviour
 
 			float d = Vector3.Distance(masterLeashPoint.position, slaveLeashPoint.position);
 
-			if (d > leashBreakRange)
+			if (d > breakRange)
 			{
 				// Break leash
 				// slaveRb.AddForce();
 			}
 			
-			else if (d > leashPullRange)
+			else if (d > pullRange)
 			{
-				// Pull slave towards master
+				pullingTime += Time.deltaTime * pullForceIncrease;
 				
+				// Pull slave towards master
+				slaveMovement.gravity = (pullRange - d) * pullForce * pullingTime *
+				                        (slaveLeashPoint.position - masterLeashPoint.position).normalized;
+				
+				Debug.Log(pullingTime);
+			}
+			else
+			{
+				pullingTime = 0;
 			}
 			
 			

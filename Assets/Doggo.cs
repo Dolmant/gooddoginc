@@ -9,12 +9,12 @@ public class Doggo : Movement
     public Boolean BARK;
     public Boolean INTERACT;
 	
-	override protected void FixedUpdate () {
-	    // Prevent new targets from being set
-        if (!ani.GetBool("fight") && !ani.GetBool("interact") && !ani.GetBool("bark")) {
-            base.FixedUpdate();
-        }
-    }
+//	override protected void FixedUpdate () {
+//	    // Prevent new targets from being set
+//        if (!ani.GetBool("fight") && !ani.GetBool("interact") && !ani.GetBool("bark")) {
+//            base.FixedUpdate();
+//        }
+//    }
 
     override protected void Update () {
         base.Update();
@@ -23,6 +23,7 @@ public class Doggo : Movement
 
     void HandleInput() {
         if (Input.GetMouseButton(0)) {
+            goingForTarget = true;
             var selfClick = false;
             RaycastHit2D hit = Physics2D.Raycast(
                 new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, 
