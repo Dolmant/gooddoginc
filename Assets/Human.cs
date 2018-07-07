@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class Human : Movement
 {
-    private Rigidbody2D rb;
 
-    void Start()
+    override protected void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        base.Start();
         rb.velocity = new Vector2(0f, -1f);
     }
     
     protected override void FixedUpdate()
     {
-        
+        // Stopping super class's fixed update
     }
 }

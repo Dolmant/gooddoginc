@@ -5,21 +5,49 @@ using UnityEngine;
 public class Leash : MonoBehaviour
 {
 	private LineRenderer line;
-	public Transform master;
-	public Transform slave;
+	public GameObject master;
+	public GameObject slave;
+
+	public float leashPullRange;
+	public float leashBreakRange;
+
+	private Rigidbody2D masterRb;
+	private Rigidbody2D slaveRb;
+	private Transform masterLeashPoint;
+	private Transform slaveLeashPoint;
 	
-	// Use this for initialization
 	void Start ()
 	{
 		line = GetComponent<LineRenderer>();
+
+		masterLeashPoint = master.transform.Find("Leash point");
+		slaveLeashPoint = slave.transform.Find("Leash point");
+
+		masterRb = master.GetComponent<Rigidbody2D>();
+		slaveRb = slave.GetComponent<Rigidbody2D>();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 		if (master && slave)
 		{
-			line.SetPosition(0, master.position);
-			line.SetPosition(1, slave.position);
+			line.SetPosition(0, masterLeashPoint.position);
+			line.SetPosition(1, slaveLeashPoint.position);
+
+			float d = Vector3.Distance(masterLeashPoint.position, slaveLeashPoint.position);
+
+			if (d > leashBreakRange)
+			{
+				// Break leash
+				// slaveRb.AddForce();
+			}
+			
+			else if (d > leashPullRange)
+			{
+				// Pull slave towards master
+				
+			}
+			
+			
 		}
 	}
 }

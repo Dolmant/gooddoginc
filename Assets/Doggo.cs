@@ -5,34 +5,29 @@ using UnityEngine;
 
 public class Doggo : Movement
 {
-    private Transform leash;
-    private Human myHuman;
     private Boolean interrupted;
     public Boolean BARK;
-    private void Start()
-    {
-        leash = transform.Find("Leash");
-    }
 	
-	// Update is called once per frame
-	override protected void FixedUpdate ()
-	{
+	override protected void FixedUpdate () {
+	    // Prevent new targets from being set
         if (!ani.GetBool("fight") && !ani.GetBool("interact") && !ani.GetBool("bark")) {
             base.FixedUpdate();
         }
     }
 
-    override protected void Update ()
-	{
+    override protected void Update () {
         base.Update();
         HandleInput();
     }
 
-    void HandleInput()
-    {
+    void HandleInput() {
         if (Input.GetMouseButton(0)) {
             var selfClick = false;
-            RaycastHit2D hit = Physics2D.Raycast(new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0);
+            RaycastHit2D hit = Physics2D.Raycast(
+                new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, 
+                            Camera.main.ScreenToWorldPoint(Input.mousePosition).y), 
+                Vector2.zero, 
+                0);
             if (hit) {
                 Debug.Log("hit");
                 if (hit.collider.CompareTag("Player")) {
@@ -49,6 +44,8 @@ public class Doggo : Movement
 
     public void Fight(Enemy enemy) {
         Debug.Log("Reaaaaddyyyyy... FIGHT");
+        rb.velocity = Vector3.zero;
+        target = transform.position;
         Destroy(enemy.gameObject);
         ani.SetBool("fight", true);
         StartCoroutine(FightAni());
@@ -58,6 +55,7 @@ public class Doggo : Movement
         yield return new WaitForSeconds(1);
         ani.SetBool("fight", false);
     }
+    
     public void InteractWithDoggo(PlaceOfInterest POI) {
         Debug.Log("Interact");
         ani.SetBool("interact", true);
@@ -72,6 +70,7 @@ public class Doggo : Movement
         }
         interrupted = false;
     }
+    
     public void DoggoBark() {
         ani.SetBool("bark", true);
         BARK = true;

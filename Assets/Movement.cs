@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour {
     public Vector3 target;
     public float speed;
     public Animator ani;
+    public Rigidbody2D rb;
 
     protected enum Direction
     {
@@ -22,6 +23,10 @@ public class Movement : MonoBehaviour {
 
     // Use this for initialization
     virtual protected void Start () {
+        if (!rb)
+        {
+            rb = GetComponent<Rigidbody2D>();
+        }
         if (!ani)
         {
             ani = GetComponent<Animator>();
@@ -44,10 +49,9 @@ public class Movement : MonoBehaviour {
     void CheckDirection()
     {
         directionPrev = direction;
-        directionVec = target - transform.position;
 	    
-        if (Mathf.Abs(directionVec.x) > Mathf.Abs(directionVec.y)) {
-            if (directionVec.x > 0)
+        if (Mathf.Abs(rb.velocity.x) > Mathf.Abs(rb.velocity.y)) {
+            if (rb.velocity.x > 0)
             {
                 direction = Direction.right;
             } else
@@ -56,7 +60,7 @@ public class Movement : MonoBehaviour {
             }
         } else
         {
-            if (directionVec.y > 0)
+            if (rb.velocity.y > 0)
             {
                 direction = Direction.back;
             }
@@ -69,15 +73,12 @@ public class Movement : MonoBehaviour {
 
     void Move()
     {
-        transform.position = directionVec.normalized * speed + transform.position;
+        rb.velocity = (target - transform.position).normalized * speed;
         
-        if (Vector3.Distance(transform.position, target) > speed)
+        if (Vector3.Distance(transform.position, target) < speed * Time.deltaTime)
         {
-            transform.position = (target - transform.position).normalized * speed + transform.position;
-        }
-        else
-        {
-            transform.position = target;
+            rb.velocity = Vector3.zero;
+            rb.MovePosition(target);
         }
     }
     void HandleAnimation()

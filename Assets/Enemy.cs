@@ -4,10 +4,7 @@ using UnityEngine;
 
 public class Enemy : Movement {
     public Doggo doggo;
-    override protected void Start () {
-        base.Start();
-    }
-
+    
 	// Update is called once per frame
 	override protected void FixedUpdate ()
 	{
