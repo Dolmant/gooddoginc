@@ -17,6 +17,7 @@ public class Doggo : MonoBehaviour {
     }
 
     private Direction direction;
+    private Direction directionPrev;
     private Vector3 directionVec;
 
     // Use this for initialization
@@ -35,6 +36,7 @@ public class Doggo : MonoBehaviour {
 
     void CheckDirection()
     {
+        directionPrev = direction;
         directionVec = target - transform.position;
 	    
         if (Mathf.Abs(directionVec.x) > Mathf.Abs(directionVec.y)) {
@@ -82,6 +84,8 @@ public class Doggo : MonoBehaviour {
 
     void HandleAnimation()
     {
-        ani.SetInteger("state", (int)direction);
+        if (directionPrev != direction) {
+            ani.SetInteger("state", (int)direction);
+        }
     }
 }
