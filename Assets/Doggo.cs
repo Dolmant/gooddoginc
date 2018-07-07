@@ -3,61 +3,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Doggo : MonoBehaviour {
-    public Vector3 target;
-    public float speed;
-    public Animator ani;
-
-    enum Direction
-    {
-        forward,
-        back,
-        left,
-        right
-    }
-
-    private Direction direction;
-    private Direction directionPrev;
-    private Vector3 directionVec;
-
+public class Doggo : Movement {
     // Use this for initialization
-    void Start () {
-        ani = GetComponent<Animator>();
+    override protected void Start () {
+        base.Start();
     }
 	
 	// Update is called once per frame
-	void Update ()
+	override protected void Update ()
 	{
-	    CheckDirection();
-	    HandleAnimation();
+        base.Update();
 	    HandleInput();
-	    MoveDoggo();
-    }
-
-    void CheckDirection()
-    {
-        directionPrev = direction;
-        directionVec = target - transform.position;
-	    
-        if (Mathf.Abs(directionVec.x) > Mathf.Abs(directionVec.y)) {
-            if (directionVec.x > 0)
-            {
-                direction = Direction.right;
-            } else
-            {
-                direction = Direction.left;
-            }
-        } else
-        {
-            if (directionVec.y > 0)
-            {
-                direction = Direction.back;
-            }
-            else
-            {
-                direction = Direction.forward;
-            }
-        }
     }
 
     void HandleInput()
@@ -68,24 +24,8 @@ public class Doggo : MonoBehaviour {
         }
     }
 
-    void MoveDoggo()
-    {
-        transform.position = directionVec.normalized * speed + transform.position;
-        
-        if (Vector3.Distance(transform.position, target) > speed)
-        {
-            transform.position = (target - transform.position).normalized * speed + transform.position;
-        }
-        else
-        {
-            transform.position = target;
-        }
-    }
-
-    void HandleAnimation()
-    {
-        if (directionPrev != direction) {
-            ani.SetInteger("state", (int)direction);
-        }
+    public void Fight(Enemy enemy) {
+        Destroy(enemy);
+        ani.SetBool("fight", true);
     }
 }
