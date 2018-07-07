@@ -6,7 +6,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour {
     public Vector3 target;
     public float speed;
-    public Animator ani;
+    protected Animator ani;
 
     protected enum Direction
     {
@@ -25,12 +25,16 @@ public class Movement : MonoBehaviour {
         ani = GetComponent<Animator>();
         target = transform.position;
     }
+
+    virtual protected void Update()
+    {
+        HandleAnimation();
+    }
 	
 	// Update is called once per frame
-	virtual protected void Update ()
+	virtual protected void FixedUpdate ()
 	{
 	    CheckDirection();
-	    HandleAnimation();
         Move();
     }
 

@@ -10,7 +10,7 @@ public class Enemy : Movement {
     }
 
 	// Update is called once per frame
-	override protected void Update ()
+	override protected void FixedUpdate ()
 	{
         if ((DoggoRef.transform.position - transform.position).magnitude > 10) {
             target = DoggoRef.transform.position;
@@ -18,7 +18,7 @@ public class Enemy : Movement {
         if ((DoggoRef.transform.position - transform.position).magnitude < 0.5) {
             FightDoggo();
         }
-        base.Update();
+        base.FixedUpdate();
     }
 
     void FightDoggo() {

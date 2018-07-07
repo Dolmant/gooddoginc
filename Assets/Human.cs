@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Human : MonoBehaviour {
-	
-	
+public class Human : Movement {
 
 	// Use this for initialization
 	void Start () {
