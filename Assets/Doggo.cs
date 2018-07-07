@@ -30,8 +30,17 @@ public class Doggo : Movement
     void HandleInput()
     {
         if (Input.GetMouseButton(0)) {
-            target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            target.z = 0f;
+            var selfClick = false;
+            RaycastHit2D hit = Physics2D.Raycast(new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0);
+            if (hit) {
+                if (hit.collider.CompareTag("Player")) {
+                    selfClick = true;
+                }
+            }
+            if (!selfClick) {
+                target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                target.z = 0f;
+            }
         }
     }
 
@@ -71,15 +80,3 @@ public class Doggo : Movement
         ani.SetBool("bark", false);
     }
 }
-
-// In case we want raycasting later
-// if (Input.GetMouseButton(0)) {
-//     RaycastHit2D hit = Physics2D.Raycast(new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y), Vector2.zero, 0);
-//     if (hit) {
-//         if (hit.collider.CompareTag("POI")) {
-//                 Debug.Log("This is a POI");
-//         }
-//     }
-//     // doggo.target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-//     // doggo.target.z = 0f;
-// }

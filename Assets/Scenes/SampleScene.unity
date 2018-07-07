@@ -5335,6 +5335,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300006, guid: 692060940499dfc4c999433dcefe29f9,
         type: 3}
+    - target: {fileID: 1221077580924712, guid: 5ec489e40b174d445b5175bdf18c00d8, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ec489e40b174d445b5175bdf18c00d8, type: 2}
   m_IsPrefabParent: 0
