@@ -23,15 +23,17 @@ public class Enemy : Movement {
             goingForTarget = true;
             target = doggo.transform.position;
         }
-        if (doggoPos < 3 && doggo.BARK) {
+        if (!confidenceShaken && doggoPos < 3 && doggo.BARK) {
             if (confidence == State.confident) {
                 confidenceShaken = true;
                 confidence = State.nervous;
                 goingForTarget = false;
+                StartCoroutine(RestoreConfidence());
             } else if (confidence == State.nervous) {
                 confidenceShaken = true;
                 confidence = State.scared;
                 goingForTarget = false;
+                StartCoroutine(RestoreConfidence());
             } else {
                 Debug.Log("MEOW *dies*");
                 Destroy(gameObject);
