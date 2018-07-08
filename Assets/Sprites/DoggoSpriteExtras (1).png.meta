@@ -1,33 +1,39 @@
 fileFormatVersion: 2
-guid: f2ff68bc98bbabb4985915ab56e6be7d
+guid: df946595915fb2a4cbb2722a69252399
 TextureImporter:
   fileIDToRecycleName:
-    21300000: DoggoSpriteExtras_0
-    21300002: DoggoSpriteExtras_1
-    21300004: DoggoSpriteExtras_2
-    21300006: DoggoSpriteExtras_3
-    21300008: DoggoSpriteExtras_5
-    21300010: DoggoSpriteExtras_6
-    21300012: DoggoSpriteExtras_7
-    21300014: DoggoSpriteExtras_8
-    21300016: DoggoSpriteExtras_9
-    21300018: DoggoSpriteExtras_10
-    21300020: DoggoSpriteExtras_11
-    21300022: DoggoSpriteExtras_12
-    21300024: DoggoSpriteExtras_13
-    21300026: DoggoSpriteExtras_14
-    21300028: DoggoSpriteExtras_15
-    21300030: DoggoSpriteExtras_16
-    21300032: DoggoSpriteExtras_17
-    21300034: DoggoSpriteExtras_18
-    21300036: DoggoSpriteExtras_19
-    21300038: DoggoSpriteExtras_20
-    21300040: DoggoSpriteExtras_21
-    21300042: DoggoSpriteExtras_22
-    21300044: DoggoSpriteExtras_23
-    21300046: DoggoSpriteExtras_24
-    21300048: DoggoSpriteExtras_25
-    21300050: DoggoSpriteExtras_26
+    21300000: DoggoSpriteExtras (1)_0
+    21300002: DoggoSpriteExtras (1)_1
+    21300004: DoggoSpriteExtras (1)_2
+    21300006: DoggoSpriteExtras (1)_4
+    21300008: DoggoSpriteExtras (1)_5
+    21300010: DoggoSpriteExtras (1)_6
+    21300012: DoggoSpriteExtras (1)_7
+    21300014: DoggoSpriteExtras (1)_8
+    21300016: DoggoSpriteExtras (1)_9
+    21300018: DoggoSpriteExtras (1)_10
+    21300020: DoggoSpriteExtras (1)_11
+    21300022: DoggoSpriteExtras (1)_12
+    21300024: DoggoSpriteExtras (1)_13
+    21300026: DoggoSpriteExtras (1)_14
+    21300028: DoggoSpriteExtras (1)_15
+    21300030: DoggoSpriteExtras (1)_16
+    21300032: DoggoSpriteExtras (1)_17
+    21300034: DoggoSpriteExtras (1)_18
+    21300036: DoggoSpriteExtras (1)_19
+    21300038: DoggoSpriteExtras (1)_20
+    21300040: DoggoSpriteExtras (1)_21
+    21300042: DoggoSpriteExtras (1)_22
+    21300044: DoggoSpriteExtras (1)_23
+    21300046: DoggoSpriteExtras (1)_24
+    21300048: DoggoSpriteExtras (1)_25
+    21300050: DoggoSpriteExtras (1)_26
+    21300052: DoggoSpriteExtras (1)_27
+    21300054: DoggoSpriteExtras (1)_28
+    21300056: DoggoSpriteExtras (1)_29
+    21300058: DoggoSpriteExtras (1)_30
+    21300060: DoggoSpriteExtras (1)_31
+    21300062: DoggoSpriteExtras (1)_32
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -119,11 +125,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DoggoSpriteExtras_0
+      name: DoggoSpriteExtras (1)_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 177
+        x: 3
+        y: 175
         width: 28
         height: 28
       alignment: 0
@@ -133,17 +139,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 449faf5399dc260439d08f5f40df347a
+      spriteID: 6c08b7de8986d1745875658a7986f520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_1
+      name: DoggoSpriteExtras (1)_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 177
+        x: 33
+        y: 175
         width: 28
         height: 28
       alignment: 0
@@ -153,13 +159,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad870696a1eee4d479ebfbd0be301653
+      spriteID: ca77bd6739870a44480614d4a9d6285b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_2
+      name: DoggoSpriteExtras (1)_2
       rect:
         serializedVersion: 2
         x: 74
@@ -173,19 +179,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d18579e8ef4b5949bed97f16a530d0b
+      spriteID: dd2d103887a2953468fe049964cc8815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_3
+      name: DoggoSpriteExtras (1)_4
       rect:
         serializedVersion: 2
         x: 111
-        y: 186
+        y: 187
         width: 11
-        height: 9
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,13 +199,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 567f5833af3ed1544823dba27219f733
+      spriteID: 15b82c92f59e27f4b87ab7fb1e5b0d4a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_5
+      name: DoggoSpriteExtras (1)_5
       rect:
         serializedVersion: 2
         x: 175
@@ -213,13 +219,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5804f5406df0ef44facce31855be88d3
+      spriteID: 43479caaf09785043a81c2f4cd1138fd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_6
+      name: DoggoSpriteExtras (1)_6
       rect:
         serializedVersion: 2
         x: 221
@@ -233,13 +239,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b686eda47d597654fa32731c6180fa16
+      spriteID: bf4ffc2c65bcc4d48bcb4aa9f23562de
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_7
+      name: DoggoSpriteExtras (1)_7
       rect:
         serializedVersion: 2
         x: 264
@@ -253,17 +259,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63198c08488e0004bb06374726faa24b
+      spriteID: 0164cc47748f30744bcf736134764d4a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_8
+      name: DoggoSpriteExtras (1)_8
       rect:
         serializedVersion: 2
-        x: 2
-        y: 141
+        x: 3
+        y: 140
         width: 28
         height: 28
       alignment: 0
@@ -273,17 +279,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a18c5fd6232f5724ba4dc656ab4a234e
+      spriteID: a9a0a479e81241240a66f8783a658301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_9
+      name: DoggoSpriteExtras (1)_9
       rect:
         serializedVersion: 2
-        x: 32
-        y: 141
+        x: 33
+        y: 140
         width: 28
         height: 28
       alignment: 0
@@ -293,13 +299,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baa35c1844d328e4e8510bb5cf86869c
+      spriteID: f6b35fce1c7a85e49a721daf861c588b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_10
+      name: DoggoSpriteExtras (1)_10
       rect:
         serializedVersion: 2
         x: 66
@@ -313,13 +319,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad0dd49dabbb48b4084126f691472fd2
+      spriteID: fb690b77ec9887445b16593c94797ce7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_11
+      name: DoggoSpriteExtras (1)_11
       rect:
         serializedVersion: 2
         x: 101
@@ -333,13 +339,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c932395757d110d43a4453b88408c4be
+      spriteID: c1ee0ea0160bb4b4aadd07aac1481b18
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_12
+      name: DoggoSpriteExtras (1)_12
       rect:
         serializedVersion: 2
         x: 136
@@ -353,16 +359,16 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ae3df881b65da43ab09115cbf5e09a
+      spriteID: b90316291f31f5846bb95d933b253164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_13
+      name: DoggoSpriteExtras (1)_13
       rect:
         serializedVersion: 2
-        x: 2
+        x: 3
         y: 105
         width: 28
         height: 28
@@ -373,16 +379,16 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7907bcb7531e6ac4089d6b7761043e5b
+      spriteID: 97ac64f9e8789e84d9df191875841af1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_14
+      name: DoggoSpriteExtras (1)_14
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 105
         width: 28
         height: 28
@@ -393,13 +399,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b44b1c04790ef964d9dcab713735a1f3
+      spriteID: 4cbc466ffb7805a45b4cc5674f1306bd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_15
+      name: DoggoSpriteExtras (1)_15
       rect:
         serializedVersion: 2
         x: 66
@@ -413,13 +419,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55834e63b59e5cd41aa91be087e9e76f
+      spriteID: d493192fbc7080643a33382b9d4c7830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_16
+      name: DoggoSpriteExtras (1)_16
       rect:
         serializedVersion: 2
         x: 101
@@ -433,13 +439,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cc2535d902b5704badff4416964a7a6
+      spriteID: 55c4081a23c5ebc42ad209497c6db460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_17
+      name: DoggoSpriteExtras (1)_17
       rect:
         serializedVersion: 2
         x: 136
@@ -453,13 +459,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40f4cfdd76e7b5949a9e4d536511ca2a
+      spriteID: 1dd356ea78c493e4d96ba9ec0c3c2936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_18
+      name: DoggoSpriteExtras (1)_18
       rect:
         serializedVersion: 2
         x: 175
@@ -473,13 +479,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0783eccece69604f9b72c7db820c877
+      spriteID: dd773716327d2e248b0109df5fe158fa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_19
+      name: DoggoSpriteExtras (1)_19
       rect:
         serializedVersion: 2
         x: 221
@@ -493,13 +499,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa3642662f759c4449a21cdc6b100922
+      spriteID: 07d20a8f093ba7a40a82b3c7d49501a6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_20
+      name: DoggoSpriteExtras (1)_20
       rect:
         serializedVersion: 2
         x: 264
@@ -513,19 +519,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a03c73f317a11f24abfdfc143078c0bd
+      spriteID: 68a6c4e5d9188894793581d1bbf705c8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_21
+      name: DoggoSpriteExtras (1)_21
       rect:
         serializedVersion: 2
-        x: 5
-        y: 66
-        width: 22
-        height: 34
+        x: 3
+        y: 72
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,19 +539,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0154a6ab16ebf5b479b172fc7bc2db20
+      spriteID: 4e10c9b38e1523d4ca75b6a6844391a2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_22
+      name: DoggoSpriteExtras (1)_22
       rect:
         serializedVersion: 2
-        x: 34
-        y: 70
-        width: 23
-        height: 25
+        x: 33
+        y: 72
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -553,13 +559,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4ee00b22ddc30c4fb92b73abd1eb580
+      spriteID: 598d4bb42623c4b4588b2b7b0bc89a94
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_23
+      name: DoggoSpriteExtras (1)_23
       rect:
         serializedVersion: 2
         x: 66
@@ -573,13 +579,53 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09cd2e9481310e845a230e822d03f447
+      spriteID: 305ecba67d4606c488a7df0a6aa695d6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_24
+      name: DoggoSpriteExtras (1)_24
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 42
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32397ff737a12e469d755cc3495bd6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoSpriteExtras (1)_25
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 42
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1155773f1f8fd04daea713ef67117b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoSpriteExtras (1)_26
       rect:
         serializedVersion: 2
         x: 175
@@ -593,13 +639,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b2884d7cc1b5e34abd5b2ad305284da
+      spriteID: afce63d92cb09ef41941dd5e07550e16
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_25
+      name: DoggoSpriteExtras (1)_27
       rect:
         serializedVersion: 2
         x: 221
@@ -613,13 +659,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddfdf8652e5207e4c86dceab28217768
+      spriteID: 3d66718de4aa6324eb7e15cb290e8b58
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DoggoSpriteExtras_26
+      name: DoggoSpriteExtras (1)_28
       rect:
         serializedVersion: 2
         x: 264
@@ -633,7 +679,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9289fa62456d4d54796dc1e3eac9a1c1
+      spriteID: 55a851dda603b2b4aa859fdb5f16712a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoSpriteExtras (1)_29
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 7
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb9c1c24666720478fc427a44fb2daa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoSpriteExtras (1)_30
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 7
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0517402c592de9145a8f9d659819bd07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoSpriteExtras (1)_31
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 8
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d11fb1ac1603c4a8580d3d03f81ede
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DoggoSpriteExtras (1)_32
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 12
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f6f27ac0e8a0c4d816a892eac8db6e
       vertices: []
       indices: 
       edges: []
@@ -641,7 +767,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 49b8e54ac25147f4a8c4ff2dddde3ee3
+    spriteID: 1197bea0dd3b7ca469b0e7b61d4601ce
     vertices: []
     indices: 
     edges: []

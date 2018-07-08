@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: DoggoSpriteExtras_8
+  m_Name: DoggoSpriteExtras (1)_8
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300014, guid: f2ff68bc98bbabb4985915ab56e6be7d, type: 3}
+  m_Sprite: {fileID: 21300014, guid: df946595915fb2a4cbb2722a69252399, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

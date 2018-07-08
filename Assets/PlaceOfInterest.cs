@@ -27,8 +27,10 @@ public class PlaceOfInterest : MonoBehaviour {
     public void Progress() {
         if (progress == State.zero) {
             progress = State.half;
+            doggo.loadable.Score += 100;
         } else if (progress == State.half) {
             progress = State.full;
+            doggo.loadable.Score += 250;
         }
     }
 }

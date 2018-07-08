@@ -4,27 +4,50 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[Serializable]
+public class Loadable {
+   public int MaxPee = 100;
+   public int Score = 0;
+   public int MaxGoodBoy = 1000;
+}
+
 public class Doggo : Movement
 {
+
+    public bool Walkies = true;
     private bool interrupted;
     public bool BARK;
     public bool INTERACT;
-    public int MaxPee = 100;
     public int CurrentPee = 100;
+    public Loadable loadable;
+    private GameObject[] finishObjects;
 
+    public Text ScoreText;
+    public Text FinishScoreText;
     public Slider PeeMeter;
-    public Int64 MaxGoodBoy = 10000;
-    public Int64 CurrentGoodBoy = 10000;
-
     public Slider GoodBoyMeter;
+    public Int64 CurrentGoodBoy = 1000;
+
 
     override protected void Start () {
         base.Start();
+        finishObjects = GameObject.FindGameObjectsWithTag("finishMenu");
+        hideFinished();
         SetPee(CurrentPee);
+        loadable = Serializer.Load<Loadable>("gamedata");
+        if (loadable == null) {
+            loadable = new Loadable();
+        }
+        if (loadable.Score > 0) {
+            CurrentGoodBoy = loadable.MaxGoodBoy;
+            CurrentPee = loadable.MaxPee;
+        }
     }
+
     override protected void Update () {
         base.Update();
         HandleInput();
+        ScoreText.text = loadable.Score.ToString();
     }
 
     override protected void FixedUpdate () {
@@ -34,11 +57,25 @@ public class Doggo : Movement
 
     void HandleGoodBoy(Int64 value) {
         if (value <= 0) {
-            // Game End
+            Walkies = false;
+            Time.timeScale = 0;
+            FinishScoreText.text = ScoreText.text;
+            showFinished();
+            Serializer.Save<Loadable>("gamedata", loadable);
         }
         CurrentGoodBoy = value;
-        GoodBoyMeter.value = (float)CurrentGoodBoy / MaxGoodBoy;
+        GoodBoyMeter.value = (float)CurrentGoodBoy / loadable.MaxGoodBoy;
     }
+    public void hideFinished(){
+		foreach(GameObject g in finishObjects){
+			g.SetActive(false);
+		}
+	}
+    public void showFinished(){
+		foreach(GameObject g in finishObjects){
+			g.SetActive(true);
+		}
+	}
 
     void HandleInput() {
         if (!ani.GetBool("fight") && !ani.GetBool("interact") && !ani.GetBool("bark") && Input.GetMouseButton(0)) {
@@ -92,7 +129,7 @@ public class Doggo : Movement
 
     void SetPee(int value) {
         CurrentPee = value;
-        PeeMeter.value = (float)CurrentPee / MaxPee;
+        PeeMeter.value = (float)CurrentPee / loadable.MaxPee;
     }
     
     public void InteractWithDoggo(RaycastHit2D POIHit) {
