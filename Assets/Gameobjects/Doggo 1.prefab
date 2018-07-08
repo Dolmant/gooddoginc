@@ -136,7 +136,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.4
 --- !u!95 &95135811673770302
 Animator:
   serializedVersion: 3
@@ -167,10 +167,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
+  goingForTarget: 0
   speed: 4
   ani: {fileID: 95135811673770302}
   rb: {fileID: 0}
+  gravity: {x: 0, y: 0, z: 0}
   BARK: 0
+  INTERACT: 0
+  MaxPee: 100
+  CurrentPee: 100
+  PeeMeter: {fileID: 0}
 --- !u!212 &212366823248296636
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -206,12 +212,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300006, guid: 692060940499dfc4c999433dcefe29f9, type: 3}
+  m_Sprite: {fileID: 21300006, guid: d76c10669a26fbd46b2b54350c44d914, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 0.3, y: 0.34}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

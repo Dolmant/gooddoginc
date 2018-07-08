@@ -2,20 +2,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Doggo : Movement
 {
     private Boolean interrupted;
     public Boolean BARK;
     public Boolean INTERACT;
-	
-//	override protected void FixedUpdate () {
-//	    // Prevent new targets from being set
-//        if () {
-//            base.FixedUpdate();
-//        }
-//    }
+    public Int64 MaxPee = 100;
+    public Int64 CurrentPee = 100;
 
+    public Slider PeeMeter;
+
+    override protected void Start () {
+        base.Start();
+        SetPee(CurrentPee);
+    }
     override protected void Update () {
         base.Update();
         HandleInput();
@@ -61,16 +63,25 @@ public class Doggo : Movement
         ani.SetBool("fight", false);
         interrupted = false;
     }
+
+    void SetPee(Int64 value) {
+        CurrentPee = value;
+        Debug.Log((float)CurrentPee / MaxPee);
+        PeeMeter.value = (float)CurrentPee / MaxPee;
+    }
     
     public void InteractWithDoggo(PlaceOfInterest POI) {
-        interrupted = false;
-        INTERACT = true;
-        goingForTarget = false;
-        rb.velocity = Vector3.zero;
-        Debug.Log("Interact");
-        ani.SetBool("interact", true);
-        StartCoroutine(InteractWithDoggoAni(POI));
-        StartCoroutine(InteractionTimer());
+        if (CurrentPee >= 20) {
+            SetPee(CurrentPee - 20);
+            interrupted = false;
+            INTERACT = true;
+            goingForTarget = false;
+            rb.velocity = Vector3.zero;
+            Debug.Log("Interact");
+            ani.SetBool("interact", true);
+            StartCoroutine(InteractWithDoggoAni(POI));
+            StartCoroutine(InteractionTimer());
+        }
     }
 
     public IEnumerator InteractWithDoggoAni(PlaceOfInterest POI) {
