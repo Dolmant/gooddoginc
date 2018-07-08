@@ -9,6 +9,8 @@ public class Loadable {
    public int MaxPee = 100;
    public int Score = 0;
    public int MaxGoodBoy = 1000;
+   public float Speed = 4;
+   public int Drink = 15;
 }
 
 public class Doggo : Movement
@@ -42,6 +44,7 @@ public class Doggo : Movement
         if (loadable.Score > 0) {
             CurrentGoodBoy = loadable.MaxGoodBoy;
             CurrentPee = loadable.MaxPee;
+            speed = loadable.Speed;
         }
 
         GoodBoyMeter.value = 1;
@@ -167,7 +170,7 @@ public class Doggo : Movement
     public IEnumerator DrinkAni() {
         yield return new WaitForSeconds(2);
         if (!interrupted) {
-            CurrentPee += 15;
+            CurrentPee += loadable.Drink;
         }
         ani.SetBool("drink", false);
         goingForTarget = true;

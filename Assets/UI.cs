@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class UI : MonoBehaviour {
+    public Doggo doggo;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +19,24 @@ public class UI : MonoBehaviour {
     void Continue() {
         SceneManager.LoadScene(1, LoadSceneMode.Single);
         Time.timeScale = 1;
+    }
+
+    void DrinkyBoi() {
+        doggo.loadable.Drink += 5;
+        Serializer.Save<Loadable>("gamedata", doggo.loadable);
+        Continue();
+    }
+
+    void FasterBoi() {
+        doggo.loadable.Speed += 1;
+        Serializer.Save<Loadable>("gamedata", doggo.loadable);
+        Continue();
+    }
+
+    void GooderBoi() {
+        doggo.loadable.MaxGoodBoy += 100;
+        Serializer.Save<Loadable>("gamedata", doggo.loadable);
+        Continue();
     }
 
     void Restart() {

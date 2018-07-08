@@ -1,10 +1,10 @@
 # gooddoginc
-D - end of walk upgrade screen
+Done - end of walk upgrade screen
 
 Done- cat tombstone
 Done - cats run away slowly when scared
 Done - standing next to human increases good boy (loveheart)
-D - refill bladder
+Done - refill bladder
 done - bark puts grumpy box over human
 Done - text overlay when thing happen. +bladder, -good boy etc
 
