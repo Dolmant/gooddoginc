@@ -7,6 +7,9 @@ public class PathNode : MonoBehaviour
 {	
 	public PathNode previousNode;
 	public List<PathNode> nextNodes;
+
+	public float pauseTime;
+	public float segmentSpeed = 1f;
 	
 	void Start()
 	{

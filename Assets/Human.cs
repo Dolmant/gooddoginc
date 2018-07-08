@@ -32,6 +32,19 @@ public class Human : Movement
         goingForTarget = true;
         
         pathVector =  currentPathTarget.transform.position - previousPathTarget.transform.position;
+
+        speed = previousPathTarget.segmentSpeed;
+        if (previousPathTarget.pauseTime > 0f)
+        {
+            StartCoroutine(PauseAtNode(previousPathTarget.pauseTime));
+        }
+    }
+
+    IEnumerator PauseAtNode(float time)
+    {
+        goingForTarget = false;
+        yield return new WaitForSeconds(time);
+        goingForTarget = true;
     }
 
     private Vector2 perp;

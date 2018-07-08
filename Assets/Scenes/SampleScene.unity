@@ -8994,6 +8994,16 @@ Prefab:
       propertyPath: nextNodes.Array.data[1]
       value: 
       objectReference: {fileID: 163420499}
+    - target: {fileID: 114976796552533338, guid: e01ffd3891e51b34a87973e47a954f63,
+        type: 2}
+      propertyPath: pauseTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114976796552533338, guid: e01ffd3891e51b34a87973e47a954f63,
+        type: 2}
+      propertyPath: segmentSpeed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e01ffd3891e51b34a87973e47a954f63, type: 2}
   m_IsPrefabParent: 0
