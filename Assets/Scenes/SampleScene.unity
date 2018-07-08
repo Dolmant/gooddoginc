@@ -1174,6 +1174,11 @@ Prefab:
       propertyPath: m_Name
       value: Doggo
       objectReference: {fileID: 0}
+    - target: {fileID: 212366823248296636, guid: 5ec489e40b174d445b5175bdf18c00d8,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ec489e40b174d445b5175bdf18c00d8, type: 2}
   m_IsPrefabParent: 0
@@ -1536,6 +1541,11 @@ Prefab:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212540513372701910, guid: ef92681cb7bbd25498143ea54cd3db3a,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef92681cb7bbd25498143ea54cd3db3a, type: 2}
   m_IsPrefabParent: 0
@@ -1576,6 +1586,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4865745587281458, guid: 47881156e4776704f81e058250fbc7be, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212340994496453616, guid: 47881156e4776704f81e058250fbc7be,
+        type: 2}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
