@@ -40,19 +40,6 @@ public class Human : Movement
         GoToNode(currentPathTarget.nextNode);
     }
 
-    private void OnGUI()
-    {
-//        Debug.DrawLine(
-//            transform.position, 
-//            transform.position + (Vector3)perp * 500f, 
-//            Color.red);
-        
-        Debug.DrawLine(
-            previousPathTarget.transform.position, 
-            previousPathTarget.transform.position + pathVector, 
-            Color.red);
-    }
-
     private Vector2 perp;
     private Vector3 cross;
     protected override void MoveGravity()
