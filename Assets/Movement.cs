@@ -27,7 +27,7 @@ public class Movement : MonoBehaviour {
     protected Vector3 directionVec;
 
     // Use this for initialization
-    virtual protected void Start () {
+    protected virtual void Start () {
         if (!rb)
         {
             rb = GetComponent<Rigidbody2D>();
@@ -39,17 +39,18 @@ public class Movement : MonoBehaviour {
         target = transform.position;
     }
 
-    virtual protected void Update()
+    protected virtual void Update()
     {
         HandleAnimation();
     }
 	
 	// Update is called once per frame
-	virtual protected void FixedUpdate ()
+    protected virtual void FixedUpdate ()
 	{
 	    CheckDirection();
-        Move();
-    }
+        MoveSelf();
+	    MoveGravity();
+	}
 
     void CheckDirection()
     {
@@ -76,21 +77,24 @@ public class Movement : MonoBehaviour {
         }
     }
 
-    void Move()
+    void MoveSelf()
     {
-        Vector3 movementComponent = Vector3.zero;
+        rb.velocity = Vector3.zero;
         if (goingForTarget)
         {
-            movementComponent = (target - transform.position).normalized * speed;
+            rb.velocity = (target - transform.position).normalized * speed;
             float targetD = Vector3.Distance(transform.position, target);
             if (targetD < targetStopRange || targetD < speed * Time.deltaTime)
             {
-                movementComponent = Vector3.zero;
+                rb.velocity = Vector3.zero;
                 goingForTarget = false;
             }
         }
+    }
 
-        rb.velocity = movementComponent + gravity;
+    protected virtual void MoveGravity()
+    {
+        rb.velocity += (Vector2)gravity;
     }
     
     void HandleAnimation()

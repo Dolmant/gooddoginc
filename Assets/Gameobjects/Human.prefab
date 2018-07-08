@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 4865745587281458}
   - component: {fileID: 50868468411468396}
   - component: {fileID: 114877173733920712}
+  - component: {fileID: 58409452711675770}
   m_Layer: 0
   m_Name: Human
   m_TagString: Untagged
@@ -80,7 +81,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1823140160413236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4983375900897858}
@@ -121,6 +122,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58409452711675770
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1823140160413236}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!95 &95730833370249622
 Animator:
   serializedVersion: 3
@@ -157,6 +173,11 @@ MonoBehaviour:
   ani: {fileID: 95730833370249622}
   rb: {fileID: 0}
   gravity: {x: 0, y: 0, z: 0}
+  currentPathTarget: {fileID: 0}
+  previousPathTarget: {fileID: 0}
+  pathVector: {x: 0, y: 0, z: 0}
+  pathForce: 5
+  pathForceDMod: 1
 --- !u!212 &212340994496453616
 SpriteRenderer:
   m_ObjectHideFlags: 1
