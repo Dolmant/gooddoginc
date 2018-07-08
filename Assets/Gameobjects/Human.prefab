@@ -151,9 +151,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
-  speed: 0.02
+  goingForTarget: 0
+  speed: 0.5
   ani: {fileID: 95730833370249622}
   rb: {fileID: 0}
+  gravity: {x: 0, y: 0, z: 0}
 --- !u!212 &212340994496453616
 SpriteRenderer:
   m_ObjectHideFlags: 1

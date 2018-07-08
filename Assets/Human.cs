@@ -8,7 +8,7 @@ public class Human : Movement
     override protected void Start()
     {
         base.Start();
-        rb.velocity = new Vector2(0f, -1f);
+        rb.velocity = new Vector2(0f, -speed);
     }
     
     protected override void FixedUpdate()
