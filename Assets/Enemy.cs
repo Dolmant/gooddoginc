@@ -7,6 +7,7 @@ public class Enemy : Movement {
     public Doggo doggo;
     private State confidence = State.confident;
     public GameObject tombStone;
+    public float chaseRange = 6f;
 
     private bool confidenceShaken;
     public enum State
@@ -30,7 +31,7 @@ public class Enemy : Movement {
 	override protected void FixedUpdate ()
 	{
         var doggoPos = (doggo.transform.position - transform.position).magnitude;
-        if (doggoPos < 10 && !confidenceShaken) {
+        if (doggoPos < chaseRange && !confidenceShaken) {
             goingForTarget = true;
             target = doggo.transform.position;
         }

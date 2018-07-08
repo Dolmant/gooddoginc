@@ -29,6 +29,7 @@ public class PathNode : MonoBehaviour
 				Transform nextT = transform.parent.GetChild(transform.GetSiblingIndex() + 1);
 				if (nextT)
 				{
+					Debug.Log(transform.GetSiblingIndex());
 					nextNodes.Add(nextT.GetComponent<PathNode>());
 					nextNodes[0].previousNode = this;
 				}

@@ -42,9 +42,17 @@ public class Human : Movement
     void GoToNode(PathNode node)
     {
         previousPathTarget = currentPathTarget;
+
+        if (node)
+        {
+            currentPathTarget = node;
+            target = currentPathTarget.transform.position;
+        }
+        else
+        {
+            target = transform.position;
+        }
         
-        currentPathTarget = node;
-        target = currentPathTarget.transform.position;
         goingForTarget = true;
         
         pathVector =  currentPathTarget.transform.position - previousPathTarget.transform.position;
