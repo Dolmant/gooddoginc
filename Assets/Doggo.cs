@@ -44,16 +44,18 @@ public class Doggo : Movement
         if (!ani.GetBool("fight") && !ani.GetBool("interact") && !ani.GetBool("bark") && Input.GetMouseButton(0)) {
             goingForTarget = true;
             var selfClick = false;
-            RaycastHit2D hit = Physics2D.Raycast(
-                new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, 
-                            Camera.main.ScreenToWorldPoint(Input.mousePosition).y), 
-                Vector2.zero, 
-                0);
-            if (hit) {
-                Debug.Log("hit");
-                if (hit.collider.CompareTag("Player")) {
-                    selfClick = true;
-                    DoggoBark();
+            if (Input.GetMouseButtonDown(0)) {
+                RaycastHit2D hit = Physics2D.Raycast(
+                    new Vector2(Camera.main.ScreenToWorldPoint(Input.mousePosition).x, 
+                                Camera.main.ScreenToWorldPoint(Input.mousePosition).y), 
+                    Vector2.zero, 
+                    0);
+                if (hit) {
+                    Debug.Log("hit");
+                    if (hit.collider.CompareTag("Player")) {
+                        selfClick = true;
+                        DoggoBark();
+                    }
                 }
             }
             if (!selfClick) {
