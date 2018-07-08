@@ -13,6 +13,10 @@ public class Doggo : Movement
     public int CurrentPee = 100;
 
     public Slider PeeMeter;
+    public Int64 MaxGoodBoy = 10000;
+    public Int64 CurrentGoodBoy = 10000;
+
+    public Slider GoodBoyMeter;
 
     override protected void Start () {
         base.Start();
@@ -21,6 +25,19 @@ public class Doggo : Movement
     override protected void Update () {
         base.Update();
         HandleInput();
+    }
+
+    override protected void FixedUpdate () {
+        base.FixedUpdate();
+        HandleGoodBoy(CurrentGoodBoy - 1);
+    }
+
+    void HandleGoodBoy(Int64 value) {
+        if (value <= 0) {
+            // Game End
+        }
+        CurrentGoodBoy = value;
+        GoodBoyMeter.value = (float)CurrentGoodBoy / MaxGoodBoy;
     }
 
     void HandleInput() {
@@ -66,7 +83,6 @@ public class Doggo : Movement
 
     void SetPee(int value) {
         CurrentPee = value;
-        Debug.Log((float)CurrentPee / MaxPee);
         PeeMeter.value = (float)CurrentPee / MaxPee;
     }
     
