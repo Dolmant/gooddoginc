@@ -21,7 +21,9 @@ public class Doggo : Movement
     public int CurrentPee = 100;
     public Loadable loadable;
     private GameObject[] finishObjects;
-
+    public GameObject tombStone;
+    public Human human;
+    public Animator loveHuman;
     public Text ScoreText;
     public Text FinishScoreText;
     public Slider PeeMeter;
@@ -52,7 +54,13 @@ public class Doggo : Movement
 
     override protected void FixedUpdate () {
         base.FixedUpdate();
-        HandleGoodBoy(CurrentGoodBoy - 1);
+        if (Vector3.Distance(transform.position, human.transform.position) < 1) {
+            loveHuman.SetBool("love", true);
+            HandleGoodBoy(CurrentGoodBoy + 1);
+        } else {
+            loveHuman.SetBool("love", false);
+            HandleGoodBoy(CurrentGoodBoy - 1);
+        }
     }
 
     void HandleGoodBoy(Int64 value) {
@@ -115,7 +123,7 @@ public class Doggo : Movement
         goingForTarget = false;
         rb.velocity = Vector3.zero;
         target = transform.position;
-        Destroy(enemy.gameObject);
+        enemy.Die();
         ani.SetBool("fight", true);
         StartCoroutine(FightAni());
     }
@@ -123,6 +131,7 @@ public class Doggo : Movement
     public IEnumerator FightAni() {
         goingForTarget = true;
         yield return new WaitForSeconds(2);
+        Instantiate(tombStone, transform.position, transform.rotation);
         ani.SetBool("fight", false);
         interrupted = false;
     }

@@ -1,10 +1,9 @@
 # gooddoginc
 D - end of walk upgrade screen
 
-D- cat tombstone
-D- standing next to human increases good boy (loveheart)
-D - cats run away slowly when scared
-D - refill good boy meter
+Done- cat tombstone
+Done - cats run away slowly when scared
+Done - standing next to human increases good boy (loveheart)
 D - refill bladder
 D - text overlay when thing happen. +bladder, -good boy etc
 

@@ -14,6 +14,11 @@ public class Enemy : Movement {
         nervous,
         scared
     }
+
+    public void Die() {
+        Debug.Log("MEOW *dies*");
+        Destroy(gameObject);
+    }
     
 	// Update is called once per frame
 	override protected void FixedUpdate ()
@@ -27,23 +32,24 @@ public class Enemy : Movement {
             if (confidence == State.confident) {
                 confidenceShaken = true;
                 confidence = State.nervous;
-                goingForTarget = false;
+                rb.velocity = -rb.velocity / 2;
                 StartCoroutine(RestoreConfidence());
             } else if (confidence == State.nervous) {
                 confidenceShaken = true;
                 confidence = State.scared;
-                goingForTarget = false;
+                rb.velocity = -rb.velocity / 2;
                 StartCoroutine(RestoreConfidence());
             } else {
-                Debug.Log("MEOW *dies*");
-                Destroy(gameObject);
+                Die();
                 return;
             }
         }
         if (doggoPos < 0.5) {
             FightDoggo();
         }
-        base.FixedUpdate();
+        if (!confidenceShaken) {
+            base.FixedUpdate();
+        }
     }
 
     public IEnumerator RestoreConfidence() {
