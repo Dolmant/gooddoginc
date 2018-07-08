@@ -126,6 +126,7 @@ public class Doggo : Movement
     
     public void DoggoBark() {
         ani.SetBool("bark", true);
+        HandleGoodBoy(CurrentGoodBoy - 100);
         rb.velocity = Vector3.zero;
         BARK = true;
         goingForTarget = false;
