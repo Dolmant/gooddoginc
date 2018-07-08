@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class TheCamera : MonoBehaviour
 {
-	public Transform target;
+	public Transform targetMain;
+	public Transform targetSecondary;
+	
 	public Vector3 offset = new Vector3(0, 0, -10);
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		transform.position = target.position + offset;
+//		float d = Vector3.Distance(targetMain.position, targetSecondary.position);
+		transform.position = Vector3.Lerp(targetMain.position, targetSecondary.position, 0.5f) +offset;
 	}
 }

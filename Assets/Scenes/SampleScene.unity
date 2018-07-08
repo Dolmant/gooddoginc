@@ -449,6 +449,16 @@ Prefab:
       propertyPath: slave
       value: 
       objectReference: {fileID: 1617904441}
+    - target: {fileID: 114983423723456822, guid: f0204665f9e38ff4784c4e8bf24bc1cf,
+        type: 2}
+      propertyPath: pullForce
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114983423723456822, guid: f0204665f9e38ff4784c4e8bf24bc1cf,
+        type: 2}
+      propertyPath: pullRange
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0204665f9e38ff4784c4e8bf24bc1cf, type: 2}
   m_IsPrefabParent: 0
@@ -488,7 +498,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ace0e18151a9534daa44ce71838f521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 776357168}
+  targetMain: {fileID: 776357168}
+  targetSecondary: {fileID: 1617904442}
+  followD: 0
   offset: {x: 0, y: 0, z: -10}
 --- !u!20 &519420031
 Camera:
@@ -1342,6 +1354,11 @@ Transform:
 --- !u!1 &1617904441 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1221077580924712, guid: 5ec489e40b174d445b5175bdf18c00d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1130655834}
+--- !u!4 &1617904442 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4502492241699956, guid: 5ec489e40b174d445b5175bdf18c00d8,
     type: 2}
   m_PrefabInternal: {fileID: 1130655834}
 --- !u!1 &1714282361 stripped
