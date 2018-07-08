@@ -113,8 +113,8 @@ public class Doggo : Movement
         yield return new WaitForSeconds(2);
         if (!interrupted) {
             POIHit.collider.gameObject.SendMessage("Progress");
-            ani.SetBool("interact", false);
         }
+        ani.SetBool("interact", false);
         goingForTarget = true;
         interrupted = false;
     }
