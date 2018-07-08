@@ -28,8 +28,8 @@ public class Doggo : Movement
     public Text FinishScoreText;
     public Slider PeeMeter;
     public Slider GoodBoyMeter;
-    public Int64 CurrentGoodBoy = 1000;
-
+    public int CurrentGoodBoy = 1000;
+    public Leash leash;
 
     override protected void Start () {
         base.Start();
@@ -56,14 +56,14 @@ public class Doggo : Movement
         base.FixedUpdate();
         if (Vector3.Distance(transform.position, human.transform.position) < 1) {
             loveHuman.SetBool("love", true);
-            HandleGoodBoy(CurrentGoodBoy + 1);
+            HandleGoodBoy(CurrentGoodBoy + 2);
         } else {
             loveHuman.SetBool("love", false);
             HandleGoodBoy(CurrentGoodBoy - 1);
         }
     }
 
-    void HandleGoodBoy(Int64 value) {
+    void HandleGoodBoy(int value) {
         if (value <= 0) {
             Walkies = false;
             Time.timeScale = 0;
@@ -73,6 +73,9 @@ public class Doggo : Movement
         }
         CurrentGoodBoy = value;
         GoodBoyMeter.value = (float)CurrentGoodBoy / loadable.MaxGoodBoy;
+        
+        // Set leash length based on good boy meter
+        leash.SetLengthPercent(GoodBoyMeter.value);
     }
     public void hideFinished(){
 		foreach(GameObject g in finishObjects){

@@ -46,7 +46,6 @@ public class Human : Movement
         perp = new Vector2(pathVector.y, -pathVector.x);
         // Determine direction based on which side of path vector we're on
         cross = Vector3.Cross(transform.position - previousPathTarget.transform.position, pathVector);
-        bool left = cross.z < 0;
         rb.velocity += perp * -cross.z / pathForceDivider;
     }
 }

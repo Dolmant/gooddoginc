@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {x: 0, y: -10.96, z: 0}
   goingForTarget: 1
-  speed: 0.5
+  speed: 1
   targetStopRange: 0
   ani: {fileID: 95730833370249622}
   rb: {fileID: 50868468411468396}
@@ -176,7 +176,7 @@ MonoBehaviour:
   currentPathTarget: {fileID: 0}
   previousPathTarget: {fileID: 0}
   pathVector: {x: 0, y: -3.46, z: 0}
-  pathForceDivider: 8
+  pathForceDivider: 20
 --- !u!212 &212340994496453616
 SpriteRenderer:
   m_ObjectHideFlags: 1
