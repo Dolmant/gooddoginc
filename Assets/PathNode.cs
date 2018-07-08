@@ -10,6 +10,13 @@ public class PathNode : MonoBehaviour
 
 	public float pauseTime;
 	public float segmentSpeed = 1f;
+
+	public enum NodeType
+	{
+		Normal, Start, End
+	}
+
+	public NodeType nodeType = NodeType.Normal;
 	
 	void Start()
 	{

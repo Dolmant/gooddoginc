@@ -10,8 +10,8 @@ Done - text overlay when thing happen. +bladder, -good boy etc
 
 DONE - good boy meter determines leash length
 DONE - nodes have a speed
-J- last node ends walkie
-DONE- decision nodes
-J - Intro into walk - through the gate - good boy doesnt go down
+DONE - last node ends walkie
+DONE - decision nodes
+DONE - Intro into walk - through the gate - good boy doesnt go down
 
 ultra good boy bonus feature @ good boy >100?

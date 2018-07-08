@@ -43,6 +43,8 @@ public class Doggo : Movement
             CurrentGoodBoy = loadable.MaxGoodBoy;
             CurrentPee = loadable.MaxPee;
         }
+
+        GoodBoyMeter.value = 1;
     }
 
     override protected void Update () {
@@ -64,24 +66,34 @@ public class Doggo : Movement
     }
 
     void HandleGoodBoy(int value) {
-        if (value <= 0) {
-            Walkies = false;
-            Time.timeScale = 0;
-            FinishScoreText.text = ScoreText.text;
-            showFinished();
-            Serializer.Save<Loadable>("gamedata", loadable);
-        }
+//        if (value <= 0) {
+//            EndWalk();
+//        }
+        if (!Walkies)
+            return;
+        
         CurrentGoodBoy = value;
         GoodBoyMeter.value = (float)CurrentGoodBoy / loadable.MaxGoodBoy;
         
         // Set leash length based on good boy meter
         leash.SetLengthPercent(GoodBoyMeter.value);
     }
+
+    public void EndWalk()
+    {
+        Walkies = false;
+        Time.timeScale = 0;
+        FinishScoreText.text = ScoreText.text;
+        showFinished();
+        Serializer.Save<Loadable>("gamedata", loadable);
+    }
+    
     public void hideFinished(){
 		foreach(GameObject g in finishObjects){
 			g.SetActive(false);
 		}
 	}
+    
     public void showFinished(){
 		foreach(GameObject g in finishObjects){
 			g.SetActive(true);

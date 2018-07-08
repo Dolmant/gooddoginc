@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 
 public class Human : Movement
@@ -10,10 +11,13 @@ public class Human : Movement
     public Vector3 pathVector;
     public float pathForceDivider;
 
+    public Doggo myDog;
+
     protected override void Start()
     {
         base.Start();
         GoToNode(currentPathTarget);
+        myDog.Walkies = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -49,6 +53,20 @@ public class Human : Movement
         if (previousPathTarget.pauseTime > 0f)
         {
             StartCoroutine(PauseAtNode(previousPathTarget.pauseTime));
+        }
+        
+        // Special nodes
+        switch (previousPathTarget.nodeType)
+        {
+            case PathNode.NodeType.Normal:
+                break;
+            case PathNode.NodeType.Start:
+                myDog.Walkies = true;
+                break;
+            case PathNode.NodeType.End:
+                myDog.EndWalk();
+                break;
+            
         }
     }
 
