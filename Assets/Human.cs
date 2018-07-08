@@ -7,8 +7,7 @@ public class Human : Movement
     public PathNode currentPathTarget;
     public PathNode previousPathTarget;
     public Vector3 pathVector;
-    public float pathForce;
-    public float pathForceDMod;
+    public float pathForceDivider;
 
     protected override void Start()
     {
@@ -20,7 +19,7 @@ public class Human : Movement
     {
         if (other.CompareTag("Path") && other.GetComponent<PathNode>() == currentPathTarget)
         {
-            GoToNextNode();
+            GoToNode(currentPathTarget.GetNextNode());
         }
     }
 
@@ -33,11 +32,6 @@ public class Human : Movement
         goingForTarget = true;
         
         pathVector =  currentPathTarget.transform.position - previousPathTarget.transform.position;
-    }
-
-    void GoToNextNode()
-    {
-        GoToNode(currentPathTarget.nextNode);
     }
 
     private Vector2 perp;
@@ -53,7 +47,6 @@ public class Human : Movement
         // Determine direction based on which side of path vector we're on
         cross = Vector3.Cross(transform.position - previousPathTarget.transform.position, pathVector);
         bool left = cross.z < 0;
-//        float totalForce = pathForce * (-cross.z / pathForceDMod);
-        rb.velocity += perp * -cross.z / 10f;
+        rb.velocity += perp * -cross.z / pathForceDivider;
     }
 }

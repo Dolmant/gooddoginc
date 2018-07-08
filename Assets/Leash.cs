@@ -44,6 +44,8 @@ public class Leash : MonoBehaviour
 
 		masterMovement = master.GetComponent<Movement>();
 		slaveMovement = slave.GetComponent<Movement>();
+
+		//tensionHeavyD = tensionLightD + 2.2f;
 	}
 	
 	void FixedUpdate () {
@@ -76,11 +78,11 @@ public class Leash : MonoBehaviour
 			IncreaseTension();
 			
 			// Pull slave lightly over time towards master
-			slaveMovement.gravity = -Mathf.Pow(tensionLightD - length, 2f) * tensionLightForce * pullingTime *
+			slaveMovement.gravity = -Mathf.Pow(length - tensionLightD, 1f) * tensionLightForce * pullingTime *
 									(slaveLeashPoint.position - masterLeashPoint.position).normalized;
 			
 			// Also pull master slightly towards slave
-			masterMovement.gravity = -Mathf.Pow(tensionLightD - length, 2f) * tensionLightReverseForce * pullingTime *
+			masterMovement.gravity = -Mathf.Pow(length - tensionLightD, 1f) * tensionLightReverseForce * pullingTime *
 			                         (masterLeashPoint.position - slaveLeashPoint.position).normalized;
 			
 			
