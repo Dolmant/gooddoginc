@@ -13,7 +13,7 @@ public class Loadable {
 
 public class Doggo : Movement
 {
-
+    public UIAnimation uiTrigger;
     public bool Walkies = true;
     private bool interrupted;
     public bool BARK;
@@ -21,7 +21,6 @@ public class Doggo : Movement
     public int CurrentPee = 100;
     public Loadable loadable;
     private GameObject[] finishObjects;
-    public GameObject tombStone;
     public Human human;
     public Animator loveHuman;
     public Text ScoreText;
@@ -57,6 +56,7 @@ public class Doggo : Movement
         if (Vector3.Distance(transform.position, human.transform.position) < 1) {
             loveHuman.SetBool("love", true);
             HandleGoodBoy(CurrentGoodBoy + 2);
+            uiTrigger.SpawnText("+Good Boy", new Color(0.07226842f, 0.4339623f, 0f, 1f));
         } else {
             loveHuman.SetBool("love", false);
             HandleGoodBoy(CurrentGoodBoy - 1);
@@ -126,15 +126,14 @@ public class Doggo : Movement
         goingForTarget = false;
         rb.velocity = Vector3.zero;
         target = transform.position;
-        enemy.Die();
         ani.SetBool("fight", true);
-        StartCoroutine(FightAni());
+        StartCoroutine(FightAni(enemy));
     }
 
-    public IEnumerator FightAni() {
+    public IEnumerator FightAni(Enemy enemy) {
         goingForTarget = true;
         yield return new WaitForSeconds(2);
-        Instantiate(tombStone, transform.position, transform.rotation);
+        enemy.Die();
         ani.SetBool("fight", false);
         interrupted = false;
     }
@@ -175,6 +174,7 @@ public class Doggo : Movement
     
     public void DoggoBark() {
         ani.SetBool("bark", true);
+        human.Grumpy();
         HandleGoodBoy(CurrentGoodBoy - 100);
         rb.velocity = Vector3.zero;
         BARK = true;

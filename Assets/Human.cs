@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Human : Movement
 {
+    public Animator grumpyAni;
     public PathNode currentPathTarget;
     public PathNode previousPathTarget;
     public Vector3 pathVector;
@@ -21,6 +22,17 @@ public class Human : Movement
         {
             GoToNode(currentPathTarget.GetNextNode());
         }
+    }
+
+    public void Grumpy() {
+        Debug.Log("I'm grumpy!");
+        grumpyAni.SetBool("grumpy", true);
+        StartCoroutine(GrumpyAni());
+    }
+
+    public IEnumerator GrumpyAni() {
+        yield return new WaitForSeconds(2);
+        grumpyAni.SetBool("grumpy", false);
     }
 
     void GoToNode(PathNode node)

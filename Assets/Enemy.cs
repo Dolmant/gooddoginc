@@ -6,6 +6,7 @@ using UnityEngine;
 public class Enemy : Movement {
     public Doggo doggo;
     private State confidence = State.confident;
+    public GameObject tombStone;
 
     private bool confidenceShaken;
     public enum State
@@ -17,7 +18,12 @@ public class Enemy : Movement {
 
     public void Die() {
         Debug.Log("MEOW *dies*");
+        TombStone();
         Destroy(gameObject);
+    }
+
+    public void TombStone() {
+        Instantiate(tombStone, transform.position, transform.rotation);
     }
     
 	// Update is called once per frame
