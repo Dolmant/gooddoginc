@@ -57,7 +57,8 @@ MonoBehaviour:
   pullRange: 4
   breakRange: 300
   pullForce: 2
-  pullForceIncrease: 1
+  pullTensionIncrease: 1
+  pullTensionDecrease: 2
 --- !u!120 &120445448080679126
 LineRenderer:
   m_ObjectHideFlags: 1

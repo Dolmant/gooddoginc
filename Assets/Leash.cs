@@ -11,7 +11,8 @@ public class Leash : MonoBehaviour
 	public float pullRange;
 	public float breakRange;
 	public float pullForce;
-	public float pullForceIncrease;
+	public float pullTensionIncrease;
+	public float pullTensionDecrease;
 	private float pullingTime = 0;
 
 	private Movement masterMovement;
@@ -33,32 +34,49 @@ public class Leash : MonoBehaviour
 	void FixedUpdate () {
 		if (master && slave)
 		{
-			line.SetPosition(0, masterLeashPoint.position);
-			line.SetPosition(1, slaveLeashPoint.position);
-
 			float d = Vector3.Distance(masterLeashPoint.position, slaveLeashPoint.position);
 
-			if (d > breakRange)
-			{
+			if (d > breakRange) {
 				// Break leash
 				// slaveRb.AddForce();
 			}
 			
-			else if (d > pullRange)
-			{
-				pullingTime += Time.deltaTime * pullForceIncrease;
-				
-				// Pull slave towards master
-				slaveMovement.gravity = (pullRange - d) * pullForce * pullingTime *
-				                        (slaveLeashPoint.position - masterLeashPoint.position).normalized;
-				
-			}
-			else
-			{
-				pullingTime = 0;
+			else if (d > pullRange) {
+				IncreaseTension();
+			} else {
+				DecreaseTension();
 			}
 			
+			// Pull slave towards master
+			if (pullingTime > 0f && d > pullRange) {
+				slaveMovement.gravity = (pullRange - d) * pullForce * pullingTime *
+										(slaveLeashPoint.position - masterLeashPoint.position).normalized;
+			}
 			
 		}
+	}
+
+	void Update()
+	{
+		UpdateLineGraphic();
+	}
+
+	void IncreaseTension()
+	{
+		pullingTime = Mathf.Min(1f, pullingTime + Time.deltaTime * pullTensionIncrease);
+	}
+
+	void DecreaseTension()
+	{
+		pullingTime = Mathf.Max(0f, pullingTime - Time.deltaTime * pullTensionDecrease);
+	}
+
+	void UpdateLineGraphic()
+	{
+		float colorFactor = Mathf.Max(0f, 1f - pullingTime / 2f);
+		line.endColor = new Color(1f, colorFactor, colorFactor);
+		
+		line.SetPosition(0, masterLeashPoint.position);
+		line.SetPosition(1, slaveLeashPoint.position);
 	}
 }
