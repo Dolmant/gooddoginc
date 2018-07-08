@@ -6,11 +6,11 @@ using UnityEngine.UI;
 
 public class Doggo : Movement
 {
-    private Boolean interrupted;
-    public Boolean BARK;
-    public Boolean INTERACT;
-    public Int64 MaxPee = 100;
-    public Int64 CurrentPee = 100;
+    private bool interrupted;
+    public bool BARK;
+    public bool INTERACT;
+    public int MaxPee = 100;
+    public int CurrentPee = 100;
 
     public Slider PeeMeter;
 
@@ -64,7 +64,7 @@ public class Doggo : Movement
         interrupted = false;
     }
 
-    void SetPee(Int64 value) {
+    void SetPee(int value) {
         CurrentPee = value;
         Debug.Log((float)CurrentPee / MaxPee);
         PeeMeter.value = (float)CurrentPee / MaxPee;

@@ -7,7 +7,7 @@ public class Enemy : Movement {
     public Doggo doggo;
     private State confidence = State.confident;
 
-    private Boolean confidenceShaken;
+    private bool confidenceShaken;
     public enum State
     {
         confident,
