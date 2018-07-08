@@ -117,10 +117,15 @@ public class Doggo : Movement
                         DoggoBark();
                     }
                     if (hit.collider.CompareTag("POI")) {
-                        hit.GetType();
                         if (!INTERACT && (hit.transform.position - transform.position).magnitude < 0.5) {
                             selfClick = true;
                             InteractWithDoggo(hit);
+                        }
+                    }
+                    if (hit.collider.CompareTag("Drinkable")) {
+                        if ((hit.transform.position - transform.position).magnitude < 0.5) {
+                            selfClick = true;
+                            Drink();
                         }
                     }
                 }
@@ -147,6 +152,25 @@ public class Doggo : Movement
         yield return new WaitForSeconds(2);
         enemy.Die();
         ani.SetBool("fight", false);
+        interrupted = false;
+    }
+
+    public void Drink() {
+        Debug.Log("Reaaaaddyyyyy... DRINK");
+        interrupted = false;
+        goingForTarget = false;
+        ani.SetBool("drink", true);
+        rb.velocity = Vector3.zero;
+        StartCoroutine(DrinkAni());
+    }
+
+    public IEnumerator DrinkAni() {
+        yield return new WaitForSeconds(2);
+        if (!interrupted) {
+            CurrentPee += 15;
+        }
+        ani.SetBool("drink", false);
+        goingForTarget = true;
         interrupted = false;
     }
 

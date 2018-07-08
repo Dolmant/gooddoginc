@@ -5,7 +5,7 @@ Done- cat tombstone
 Done - cats run away slowly when scared
 Done - standing next to human increases good boy (loveheart)
 D - refill bladder
-bark puts grumpy box over human
+done - bark puts grumpy box over human
 Done - text overlay when thing happen. +bladder, -good boy etc
 
 DONE - good boy meter determines leash length
