@@ -603,16 +603,6 @@ Prefab:
       propertyPath: slave
       value: 
       objectReference: {fileID: 1617904441}
-    - target: {fileID: 114983423723456822, guid: f0204665f9e38ff4784c4e8bf24bc1cf,
-        type: 2}
-      propertyPath: pullForce
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114983423723456822, guid: f0204665f9e38ff4784c4e8bf24bc1cf,
-        type: 2}
-      propertyPath: pullRange
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0204665f9e38ff4784c4e8bf24bc1cf, type: 2}
   m_IsPrefabParent: 0

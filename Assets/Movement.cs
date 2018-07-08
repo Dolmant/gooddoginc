@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Movement : MonoBehaviour {
     public Vector3 target;
     public bool goingForTarget;
     public float speed;
+    public float targetStopRange;
     public Animator ani;
     public Rigidbody2D rb;
 
@@ -80,7 +82,8 @@ public class Movement : MonoBehaviour {
         if (goingForTarget)
         {
             movementComponent = (target - transform.position).normalized * speed;
-            if (Vector3.Distance(transform.position, target) < speed * Time.deltaTime)
+            float targetD = Vector3.Distance(transform.position, target);
+            if (targetD < targetStopRange || targetD < speed * Time.deltaTime)
             {
                 movementComponent = Vector3.zero;
                 goingForTarget = false;

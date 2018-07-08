@@ -169,6 +169,7 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   goingForTarget: 0
   speed: 4
+  targetStopRange: 0.5
   ani: {fileID: 95135811673770302}
   rb: {fileID: 0}
   gravity: {x: 0, y: 0, z: 0}

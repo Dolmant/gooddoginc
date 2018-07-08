@@ -8,11 +8,7 @@ public class Human : Movement
     override protected void Start()
     {
         base.Start();
-        rb.velocity = new Vector2(0f, -speed);
-    }
-    
-    protected override void FixedUpdate()
-    {
-        // Stopping super class's fixed update
+        target = new Vector3(0f, -9999999f, 0f);
+        goingForTarget = true;
     }
 }

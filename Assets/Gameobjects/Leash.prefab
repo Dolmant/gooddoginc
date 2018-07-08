@@ -54,10 +54,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   master: {fileID: 0}
   slave: {fileID: 0}
-  pullRange: 4
+  tensionLightD: 2.5
+  tensionLightForce: 0.6
+  tensionHeavyD: 5
+  tensionHeavyForce: 10
+  tensionLightReverseForce: 0.1
+  minWidth: 0.05
+  maxWidth: 0.1
+  tensionHeavyTime: 0.08
   breakRange: 300
-  pullForce: 2
-  pullTensionIncrease: 1
+  pullTensionIncrease: 0.8
   pullTensionDecrease: 2
 --- !u!120 &120445448080679126
 LineRenderer:
