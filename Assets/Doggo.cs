@@ -56,6 +56,13 @@ public class Doggo : Movement
                         selfClick = true;
                         DoggoBark();
                     }
+                    if (hit.collider.CompareTag("POI")) {
+                        hit.GetType();
+                        if (!INTERACT && (hit.transform.position - transform.position).magnitude < 0.5) {
+                            selfClick = true;
+                            InteractWithDoggo(hit);
+                        }
+                    }
                 }
             }
             if (!selfClick) {
@@ -88,7 +95,7 @@ public class Doggo : Movement
         PeeMeter.value = (float)CurrentPee / MaxPee;
     }
     
-    public void InteractWithDoggo(PlaceOfInterest POI) {
+    public void InteractWithDoggo(RaycastHit2D POIHit) {
         if (CurrentPee >= 20) {
             SetPee(CurrentPee - 20);
             interrupted = false;
@@ -97,15 +104,15 @@ public class Doggo : Movement
             rb.velocity = Vector3.zero;
             Debug.Log("Interact");
             ani.SetBool("interact", true);
-            StartCoroutine(InteractWithDoggoAni(POI));
+            StartCoroutine(InteractWithDoggoAni(POIHit));
             StartCoroutine(InteractionTimer());
         }
     }
 
-    public IEnumerator InteractWithDoggoAni(PlaceOfInterest POI) {
+    public IEnumerator InteractWithDoggoAni(RaycastHit2D POIHit) {
         yield return new WaitForSeconds(2);
         if (!interrupted) {
-            POI.Progress();
+            POIHit.collider.gameObject.SendMessage("Progress");
             ani.SetBool("interact", false);
         }
         goingForTarget = true;

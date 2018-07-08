@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4891371020053706}
   - component: {fileID: 212006338508914582}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4971126445874922}
   - component: {fileID: 114194462829046846}
-  m_Layer: 0
+  - component: {fileID: 58542299892032772}
+  m_Layer: 9
   m_Name: Hydrant
   m_TagString: POI
   m_Icon: {fileID: 0}
@@ -50,7 +51,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1140677972031012}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 0.7, z: 0}
+  m_LocalPosition: {x: 0.03, y: 0.49, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 4971126445874922}
@@ -63,13 +64,28 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1737942854635044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.88, y: -2.83, z: -0.19140625}
+  m_LocalPosition: {x: 2.88, y: -2.76, z: -0.19140625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4891371020053706}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58542299892032772
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1737942854635044}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.41}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!114 &114194462829046846
 MonoBehaviour:
   m_ObjectHideFlags: 1

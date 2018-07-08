@@ -20,7 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4920723644208202}
   - component: {fileID: 114140166914611588}
-  m_Layer: 0
+  - component: {fileID: 58344122347761450}
+  m_Layer: 9
   m_Name: Bench
   m_TagString: POI
   m_Icon: {fileID: 0}
@@ -36,7 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4842265848236344}
   - component: {fileID: 212350094076568146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Graphic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +51,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1524402185485304}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.77, y: -1.51, z: 0}
+  m_LocalPosition: {x: 0.37, y: 0.4, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 4920723644208202}
@@ -63,13 +64,28 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1220431332790234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.88, y: -2.83, z: -0.19140625}
+  m_LocalPosition: {x: 1.55, y: -4.76, z: -0.19140625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4842265848236344}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58344122347761450
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1220431332790234}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.36, y: 0.36}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!114 &114140166914611588
 MonoBehaviour:
   m_ObjectHideFlags: 1

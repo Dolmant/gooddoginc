@@ -177,8 +177,8 @@ MonoBehaviour:
   MaxPee: 100
   CurrentPee: 100
   PeeMeter: {fileID: 0}
-  MaxGoodBoy: 50000
-  CurrentGoodBoy: 50000
+  MaxGoodBoy: 10000
+  CurrentGoodBoy: 10000
   GoodBoyMeter: {fileID: 0}
 --- !u!212 &212366823248296636
 SpriteRenderer:
